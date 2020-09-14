@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*열린책들 스타일시트*/
+
+@import url(../css/common.css);
+
+.inbox{background-color: #f3f8f3;}
+
+/*인트로*/
+.intro_index a{color: #fff;}
+.intro_index li{position: relative; z-index: 2; width: 50%; line-height: 100px; font-size: 60px; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.intro_index li::after{content: ''; display: block; position: absolute; width: 80%; height: 60px; background-color: #f0f; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
