@@ -5,6 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /*font-family: 'Noto Sans KR', sans-serif;*/
 
+@font-face{
+    font-family:elegance;
+    src:url(../fonts/Rounded_Elegance.ttf);
+}
+
+@font-face{
+    font-family:dolce;
+    src:url(../fonts/Dolce_Vita.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
