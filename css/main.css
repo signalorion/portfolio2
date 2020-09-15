@@ -9,59 +9,90 @@
 }
 
 /*인트로*/
-.intro_index a {
-    color: #fff;
-}
 
 .intro_index {
     position: absolute;
     z-index: 2;
-    width: 50%;
-    line-height: 100px;
+    width: 40%;
     font-size: 60px;
     text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+.intro_index li a {
+    color: #fff;
 }
 
 .intro_index li {
     position: relative;
     font-family: elegance;
+    width: 100%;
+    height: 65px;
+    margin: 20px 0;
 }
 
-.intro_index li.on::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 80%;
-    height: 60px;
-    background-color: #f0f;
-    /*변경대상...색깔을 각 class이름에서 가져와야한다*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+.intro_index li:nth-child(1):hover {
+    background-color: #BE161D;
+}
 
+.intro_index li:nth-child(2):hover {
+    background-color: #000;
+}
+
+.intro_index li:nth-child(3):hover {
+    background-color: #5B910A;
+}
+
+.intro_index li:nth-child(4):hover {
+    background-color: #AAAAAA;
+}
+
+#intro .active {
+    z-index: 2;
+    opacity: 1;
+}
+
+.openhover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/bg/d_openbooksbg.jpg)no-repeat center/cover;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.mimehover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/bg/d_mimebg.jpg)no-repeat center/cover;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.byulhover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/bg/d_byulchunji2.jpg)no-repeat center/cover;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.museumhover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/bg/d_main_museum.jpg)no-repeat center/cover;
+    opacity: 0;
+    transition: all .5s;
 }
 
 #intro {
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 1;
-    transition: all .6s; /*못생김....*/
 }
 
-#intro::after {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.5;
-}
