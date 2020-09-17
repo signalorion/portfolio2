@@ -96,3 +96,141 @@
     position: relative;
 }
 
+/*열린책들*/
+
+/*헤더********************************************/
+.top {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    padding: 20px 15px 15px 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.toplogo a {
+    display: flex;
+    color: #222;
+}
+
+.toplogo img {
+    width: 100px;
+}
+
+.logotxt {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.logotxt h1 {
+    font-size: 25px;
+}
+
+.logotxt h2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.main_log {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    text-align: right;
+}
+
+.main_log a {
+    color: #222;
+    font-size: 14px;
+}
+
+.main_search {
+    position: relative;
+    width: 30%;
+    top: -60px;
+    right: -70%;
+    height: 47px;
+}
+
+#mainfind {
+    width: 100%;
+    height: 47px;
+    border: 8px solid #C5161D;
+    padding-left: 10px;
+}
+
+.main_search img {
+    width: 18px;
+    top: 15px;
+    position: absolute;
+    right: 18px;
+}
+
+
+/*****************************************헤더끝*/
+
+/*메인**********************************************/
+.banner {
+    width: 50%;
+    background-color: #C5161D;
+    display: flex;
+    height: 35vh;
+    top: 190px;
+    position: absolute;
+}
+
+.ban_txt {
+    flex: 3;
+    background-color: #C5161D;
+    padding-top: 12vh;
+}
+
+.ban_img {
+    flex: 1.3;
+    background: url(../images/books/luis.jpg) no-repeat center/cover;
+}
+
+.ban_img a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ban_txt_li a {
+    color: #fff;
+}
+
+.ban_txt_li {
+    text-align: right;
+}
+.ban_txt_li li{
+    line-height: 30px;
+}
+
+.ban_txt_li span {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************메인끝*/
