@@ -144,6 +144,10 @@
     font-size: 14px;
 }
 
+.main_log a:hover {
+    text-decoration: underline;
+}
+
 .main_search {
     position: relative;
     width: 30%;
@@ -171,7 +175,7 @@
 
 /*메인**********************************************/
 .banner {
-    width: 50%;
+    width: 55%;
     background-color: #C5161D;
     display: flex;
     height: 35vh;
@@ -182,7 +186,8 @@
 .ban_txt {
     flex: 3;
     background-color: #C5161D;
-    padding-top: 12vh;
+    padding-top: 10vh;
+    padding-right: 3vw;
 }
 
 .ban_img {
@@ -202,25 +207,200 @@
 
 .ban_txt_li {
     text-align: right;
+
 }
-.ban_txt_li li{
-    line-height: 30px;
+
+.ban_txt_li li {
+    line-height: 25px;
+}
+
+.ban_txt_li h3 {
+    line-height: 60px;
+    font-size: 20px;
 }
 
 .ban_txt_li span {
     display: block;
 }
 
+.ban_bul {
+    display: flex;
+    width: 140px;
+    margin: 80px auto 0 22vw;
+    justify-content: center;
+}
 
+.ban_bul li {
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
+.ban_bul li.on {
+    background-color: #650000;
+    border: 1px solid #650000;
+}
 
+/*베스트셀러*/
+.main_wrap {
+    width: 100%;
+    height: 360px;
+}
 
+.bestseller {
+    height: 35vh;
+    width: 45%;
+    float: right;
+}
 
+.bestseller h4 {
+    font-size: 20px;
+    padding-left: 3vw;
+    padding-top: 10px;
+}
 
+.bestseller h4 small {
+    font-weight: 400;
+}
 
+.best_wrap {
+    display: flex;
+    height: 90%;
+    padding: 25px;
+}
 
+.best_img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
+.best_img {
+    flex: 1;
+}
 
+.best_img img {
+
+    height: 100%;
+}
+
+.best_txt {
+    flex: 1.5;
+    padding-top: 5vh;
+    padding-right: 3vh;
+}
+
+.best_txt_li {
+    text-align: right;
+
+}
+
+.best_txt_li h3 {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.best_txt_li a {
+    color: #222;
+}
+
+.best_txt_li span {
+    display: block;
+}
+
+/*메인컨텐츠*/
+.main_cont {
+    display: flex;
+    color: #222;
+}
+
+.main_cont h5 {
+    font-size: 40px;
+    color: #C5161D;
+    font-weight: 900;
+}
+
+.main_cont .new {
+    flex: 6.5;
+    text-align: center;
+
+}
+
+.main_cont .author {
+    flex: 3.5;
+    text-align: center;
+}
+
+.newlist {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.newlist a {
+    color: #222;
+}
+
+.newlist li {
+    width: 21%;
+    float: left;
+    margin-right: 5%;
+}
+
+.newlist li:last-child {
+    margin-right: 0;
+}
+
+.newlist li img {
+    width: 100%;
+}
+
+.newlist li b {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    word-break: keep-all;
+    height: 7vh;
+    padding: 7px 0;
+}
+
+.newlist li p {
+    color: #777;
+}
+
+.author_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10px;
+    width: 100%;
+    height: 77%;
+}
+
+.author_list li {
+    width: 47%;
+    height: 47%;
+}
+
+.author_list li:nth-child(1) {
+    background: url(../images/writers/verber.jpg) no-repeat center/cover;
+}
+
+.author_list li:nth-child(2) {
+    background: url(../images/writers/roberto.jpg) no-repeat center/cover;
+}
+
+.author_list li:nth-child(3) {
+    background: url(../images/writers/paul.jpg) no-repeat center/cover;
+}
+
+.author_list li:nth-child(4) {
+    background: url(../images/writers/zorju.jpg) no-repeat center/cover;
+}
 
 
 
