@@ -372,6 +372,10 @@
     color: #777;
 }
 
+.author p {
+    padding-bottom: 20px;
+}
+
 .author_list {
     display: flex;
     flex-wrap: wrap;
@@ -402,15 +406,136 @@
     background: url(../images/writers/zorju.jpg) no-repeat center/cover;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /***********************************************메인끝*/
+
+/*격자무늬 메뉴 시작***********************************/
+
+.boxs_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    padding: 0 20px;
+}
+
+.boxs_wrap > div {
+    width: 32%;
+    margin-right: 2%;
+}
+
+.boxs_wrap > div:nth-child(3n) {
+    margin-right: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section:hover {}
+
+section > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-shadow: 0 3px 10px #000;
+    font-size: 40px;
+    position: relative;
+}
+
+section > a > h6 {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+
+/*왜 a태그로 싼 h6과 얘는 글씨크기에 차이가 나지??*/
+
+/*컨박스1*/
+.collect {
+    background: url(../images/books/jungip_eco3.jpg) no-repeat center/cover;
+    height: 40vh;
+}
+
+.ebook {
+    background: url(../images/books/ebook3.jpg) no-repeat center/cover;
+    height: 35vh;
+}
+
+/*컨박스2*/
+.event_box {
+    background-color: #C5161D;
+    height: 50vh;
+}
+.event_box {
+    position: relative;
+    padding: 15px;
+}
+
+.event_box h6 {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #fff;
+    text-shadow: 0 3px 10px #000;
+    font-size: 40px;
+}
+.eventban{background-color: #fff; width: 100%; height: 50%;}
+
+.notice,
+.bbg {
+    height: 15vh;
+}
+
+.notice {
+    border: 15px solid #C5161D;
+    background-color: #fff;
+}
+
+.bbg {
+    background-color: #9C2328;
+}
+
+/*컨박스3*/
+.world {
+    background: url(../images/world.PNG) no-repeat bottom/cover;
+    height: 30vh;
+}
+
+.openbooksintro {
+    background: url(../images/writers/Freud.jpg) no-repeat top/cover;
+    height: 40vh;
+}
+
+
+
+
+
+/*************************************격자무늬 메뉴 끝*/
+
+/*편집자 추천도서**************************************/
+
+.editer_recomm{width: 100%; height: 30vh; background-color: #fff; margin: 10vh 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************편집자추천도서 끝*/

@@ -29,6 +29,9 @@ $(function(){
         $(".newlist").append('<li><a href="#"><img src="images/books/'+(i+1)+'.jpg" alt="새책"><b>'+msg[i]+'</b><p>'+writer[i]+'</p></a></li>');
     };
     
+    /*이벤트 배너 좌로 넘어가기*/
+    
+    
     
     
     

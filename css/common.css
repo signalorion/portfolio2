@@ -56,6 +56,10 @@ body {
     margin: 0 auto;
 }
 
+/*플롯쓸경우*/
+.clearboth::before{display: block; content: ''; clear: both;}
+.clearboth::after{display: block; content: ''; clear: both;}
+
 /*비율유지박스 설정*/
 .rbx {
     position: relative;
