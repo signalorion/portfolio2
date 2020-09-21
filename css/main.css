@@ -468,6 +468,7 @@ section > a > h6 {
     background-color: #C5161D;
     height: 50vh;
 }
+
 .event_box {
     position: relative;
     padding: 15px;
@@ -481,7 +482,12 @@ section > a > h6 {
     text-shadow: 0 3px 10px #000;
     font-size: 40px;
 }
-.eventban{background-color: #fff; width: 100%; height: 50%;}
+
+.eventban {
+    background-color: #fff;
+    width: 100%;
+    height: 50%;
+}
 
 .notice,
 .bbg {
@@ -516,26 +522,120 @@ section > a > h6 {
 
 /*편집자 추천도서**************************************/
 
-.editer_recomm{width: 100%; height: 30vh; background-color: #fff; margin: 10vh 0;}
+.editer_recomm {
+    width: 100%;
+    height: 30vh;
+    background-color: #fff;
+    margin: 10vh 0;
+    display: flex;
+}
 
+.editer_recomm h6 {
+    height: 100%;
+    width: 50vw;
+    padding-top: 7vh;
+    font-size: 20px;
+    text-align: center;
+}
 
+.recomm {
+    display: flex;
+    padding-top: 2vh;
+}
 
+.recomm a {
+    color: #222;
+}
 
+.recomm b {
+    font-size: 16px;
+    display: block;
+    padding: 7px 0;
+}
 
+.recomm p {
+    color: #777;
+}
 
+.recomm li {
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-right: 5%;
+}
 
+.recomm li:last-child {
+    margin-right: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
+.recomm li img {
+    width: 100%;
+    height: 265px;
+}
 
 
 
 /****************************************편집자추천도서 끝*/
+
+/*푸터***************************************************/
+footer {
+    width: 100%;
+    height: 18vh;
+    background-color: #fff;
+    outline: 1px solid red;
+    display: flex;
+}
+
+.footerlogo {
+    flex: 1;
+    margin-left: 7vw;
+    line-height: 18vh;
+}
+
+.footerlogo img {
+    width: 205px;
+
+}
+
+
+.footercenter {
+    flex: 4.5;
+    padding: 3vh 0;
+}
+
+.footercenter a {
+    color: #222;
+}
+
+.footerinfo {
+    display: flex;
+}
+
+.footerinfo li {
+    margin-right: 5vw;
+}
+
+.footerinfo a {
+    font-weight: bold;
+}
+
+address {
+    font-style: normal;
+    color: #8B8B8B;
+    font-size: 12px;
+}
+
+
+.snslinks {
+    display: flex;
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+/********************************************푸터끝******/
