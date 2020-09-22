@@ -12,30 +12,37 @@ var writer = [
         "김경철, 김해영"
     ];
 
-$(function(){
-    
-    $(".intro_index li").mouseenter(function(){
-        $(this).addClass("on").siblings().removeClass("on");
-        
-        var liin =$(this).index();
-        console.log(liin);
-        
-        $(".bgbox").children().eq(liin).addClass("active").siblings().removeClass("active");
-    });////////인트로 각 이름 호버할 시//////////////
+$(function () {
 
-    
+    $(".intro_index li").mouseenter(function () {
+        $(this).addClass("on").siblings().removeClass("on");
+
+        var liin = $(this).index();
+        console.log(liin);
+
+        $(".bgbox").children().eq(liin).addClass("active").siblings().removeClass("active");
+    }); ////////인트로 각 이름 호버할 시//////////////
+
+
     /*새로나온책 포문돌리기*/
-    for(var i=0; i<4; i++){
-        $(".newlist").append('<li><a href="#"><img src="images/books/'+(i+1)+'.jpg" alt="새책"><b>'+msg[i]+'</b><p>'+writer[i]+'</p></a></li>');
+    for (var i = 0; i < 4; i++) {
+        $(".newlist").append('<li><a href="#"><img src="images/books/' + (i + 1) + '.jpg" alt="새책"><b>' + msg[i] + '</b><p>' + writer[i] + '</p></a></li>');
     };
-    
+
     /*이벤트 배너 좌로 넘어가기*/
-    
-    
-    
-    
-    
-    
-    
-});/////////////제이쿼리블록//////////////
+
+    $('.eventban').bxSlider({
+        auto: true,
+        autoControls: false,
+        stopAutoOnClick: false,
+        pager: false,
+        slideWidth: 600
+    });
+
+
+
+
+
+
+}); /////////////제이쿼리블록//////////////
 /////////////////////////////////////////////////

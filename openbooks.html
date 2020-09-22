@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"><!--슬라이더-->
     <title>열린책들</title>
     <script src="script/jquery-3.5.1.min.js"></script>
     <script src="script/jquery-ui.min.js"></script>
     <script src="script/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script><!--슬라이더-->
 </head>
 
 <body>
@@ -96,10 +98,14 @@
 
                 <div class="cbox2">
                     <section class="event_box">
-                        <div class="eventban"></div>
-                        <ul>
-                            <li><a href="#"><img src="images/icons/left_arrow.png" alt="왼쪽이동방향"></a></li>
-                            <li><a href="#"><img src="images/icons/right_arrow.png" alt="오른쪽이동방향"></a></li>
+                        <div class="eventban">
+                            <div class="eventbanimg"><img src="images/event/1.jpg"></div>
+                            <div class="eventbanimg"><img src="images/event/2.jpg"></div>
+                            <div class="eventbanimg"><img src="images/event/3.jpg"></div>
+                        </div>
+                        <ul class="ebtn_list">
+                            <li class="event_num">1</li>
+                           
                         </ul>
                         <h6>이벤트</h6>
                     </section>
@@ -133,30 +139,34 @@
             <div class="editer_recomm">
                 <h6>편집자 추천도서</h6>
                 <ul class="recomm">
-                    <li>
+                    <li class="recomm_li">
                         <a href="#">
-                            <img src="images/books/recomm1.jpg" alt="추천1">
+                            <!--<img src="images/books/recomm1.jpg" alt="추천1">-->
+                            <span class="recomm_img bimg1"></span>
                             <b>서울 선언</b>
                             <p>김시덕</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="recomm_li">
                         <a href="#">
-                            <img src="images/books/recomm2.jpg" alt="추천2">
+                            <span class="recomm_img bimg2"></span>
+                            <!--<img src="images/books/recomm2.jpg" alt="추천2">-->
                             <b>사흘 그리고 한 인생</b>
                             <p>피에르 르메트르</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="recomm_li">
                         <a href="#">
-                            <img src="images/books/recomm3.jpg" alt="추천3">
+                            <span class="recomm_img bimg3"></span>
+                            <!--<img src="images/books/recomm3.jpg" alt="추천3">-->
                             <b>경제 규칙 다시 쓰기</b>
                             <p>조지프 스티글리츠</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="recomm_li">
                         <a href="#">
-                            <img src="images/books/recomm4.jpg" alt="추천4">
+                            <span class="recomm_img bimg4"></span>
+                            <!--<img src="images/books/recomm4.jpg" alt="추천4">-->
                             <b>열린책들 도서목록</b>
                             <p></p>
                         </a>
@@ -196,6 +206,7 @@
                     <li><a href="#">회원약관</a></li>
                     <li><a href="#">이메일무단수집거부</a></li>
                 </ul>
+                <div class="footerline"></div>
                 <address>
                     413-120 경기도 파주시 문발로 253 파주출판도시<br>
                     TEL (031) 955-4000 FAX (031) 955-4004<br>
