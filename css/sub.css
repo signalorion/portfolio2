@@ -6,6 +6,37 @@
 
 .inbox {
     background-color: #f3f8f3;
+    padding: 0 25px;
+}
+
+.bstit {
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    position: relative;
+    padding-top: 6vh;
+}
+
+.bstit small {
+    font-size: 22px;
+}
+
+.bstit p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+}
+
+.bstit::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 40%;
+    height: 5px;
+    background-color: #C5161D;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .banner {
@@ -15,11 +46,18 @@
 }
 
 .bannerimg {
-    width: 70%;
+    width: 1400px;
+    max-width: 100%;
     height: 100%;
     background: url(../images/bg/bestseller.jpg) no-repeat center/cover;
     margin: 0 auto;
     position: relative;
+}
+
+.bannerimg a {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .bannerlogo {
@@ -37,22 +75,48 @@ nav {
     height: 50px;
     background-color: #2E2E2E;
 }
-.bslist{display: flex;}
+
+.bslist {}
 
 .bsimg {
     position: relative;
-    flex: 1.5;
-}
-.bstxt{
-    flex: 4;
+    float: left;
+    width: 30%;
+
 }
 
 .bsimg img {
-    width: 245px;
+    width: 65%;
 }
 
 .bsimg img:nth-child(2) {
     position: absolute;
     top: 0;
-    left: 55%;
+    left: 40%;
 }
+
+.bstxt {
+    float: left;
+    padding-left: 5%;
+}
+
+.bstxt_tit {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.bstxt li{line-height: 33px; color: #222; display: flex;}
+
+.txtleft{width: 77px;}
+
+
+
+
+
+
+
+
+
+
+

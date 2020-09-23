@@ -6,14 +6,14 @@
 /*font-family: 'Noto Sans KR', sans-serif;*/
 
 
-@font-face{
-    font-family:elegance;
-    src:url(../fonts/Rounded_Elegance.ttf);
+@font-face {
+    font-family: elegance;
+    src: url(../fonts/Rounded_Elegance.ttf);
 }
 
-@font-face{
-    font-family:dolce;
-    src:url(../fonts/Dolce_Vita.ttf);
+@font-face {
+    font-family: dolce;
+    src: url(../fonts/Dolce_Vita.ttf);
 }
 
 * {
@@ -58,8 +58,17 @@ body {
 }
 
 /*플롯쓸경우*/
-.clearboth::before{display: block; content: ''; clear: both;}
-.clearboth::after{display: block; content: ''; clear: both;}
+.clearboth::before {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.clearboth::after {
+    display: block;
+    content: '';
+    clear: both;
+}
 
 /*비율유지박스 설정*/
 .rbx {
