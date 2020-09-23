@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <!--슬라이더-->
     <title>열린책들</title>
     <script src="script/jquery-3.5.1.min.js"></script>
     <script src="script/jquery-ui.min.js"></script>
     <script src="script/js.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="script/jquery.bxslider.js"></script>
     <!--슬라이더-->
-
 </head>
 
 <body>
@@ -42,7 +41,7 @@
 
             <div class="main_wrap">
                 <div class="bestseller">
-                    <h4>BESTSELLER <small>베스트셀러</small><span>더보기 ＋</span></h4>
+                    <a href="bestseller.html"><h4>BESTSELLER <small>베스트셀러</small><span>더보기 <span class="bsplus">＋</span></span></h4></a>
                     <div class="best_wrap">
                         <div class="best_txt">
                             <ul class="best_txt_li">
@@ -61,6 +60,7 @@
                 <section class="new">
                     <h5>NEW</h5>
                     <p>새로나온 책</p>
+                    <a href="#" class="newplus"><span>더보기 <span class="bsplus">＋</span></span></a>
                     <ul class="newlist">
                         <!--<li><a href="#"><img src="images/books/1.jpg" alt="새책1"></a>
                             <b>빌 스트리트가 말할 수 있다면</b>
@@ -180,9 +180,9 @@
             <div class="ban_txt">
                 <ul class="ban_txt_li">
                     <li>
-                        <h3><a href="#">역사의 끝까지</a></h3>
+                        <h3><a href="#">아이를 위한 정신 의학</a></h3>
                     </li>
-                    <li><a href="#">루이스 세풀베다 <span>엄지영 옮김</span></a></li>
+                    <li><a href="#">다키카와 가즈히로 <span>김경원 옮김</span></a></li>
                 </ul>
 
                 <ul class="ban_bul">
@@ -193,8 +193,23 @@
                     <li><a href=#></a></li>
                 </ul>
             </div>
-            <div class="ban_img"><a href="#"></a></div>
+            <div class="ban_img_box">
+                <div class="ban_img1 active"><a href="#"></a></div>
+                <div class="ban_img2"><a href="#"></a></div>
+                <div class="ban_img3"><a href="#"></a></div>
+                <div class="ban_img4"><a href="#"></a></div>
+                <div class="ban_img5"><a href="#"></a></div>
+            </div>
         </div>
+        
+        <div class="nextsite">
+            <p>고급 예술 읽기의 또 다른 재미가 시작됩니다.</p>
+            <img src="images/mime_logo.png" alt="미메시스로고">
+            <a href="#" class="nextsite_go"><span>바로가기</span></a>
+        </div>
+        
+        
+        
         <footer>
             <div class="footerlogo">
                 <img src="images/footerlogo.jpg" alt="푸터로고">

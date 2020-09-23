@@ -12,6 +12,29 @@ var writer = [
         "김경철, 김해영"
     ];
 
+var bantit = ["아이를 위한 정신 의학",
+            "중국과 협상하기",
+             "바이러스를 이기는 영양제",
+             "심판",
+             "올랜도"
+            ]
+var banwriter = [
+    "다키카와 가즈히로",
+    "헨리 M. 폴슨 주니어",
+    "김경철, 김해영",
+    "베르나르 베르베르",
+    "버지니아 울프"
+]
+
+var bantrans = [
+    "김경원 옮김",
+    "고기탁 옮김",
+    "&nbsp;",
+    "전미연 옮김",
+    "이미애 옮김"
+]
+
+
 $(function () {
 
     $(".intro_index li").mouseenter(function () {
@@ -22,6 +45,20 @@ $(function () {
 
         $(".bgbox").children().eq(liin).addClass("active").siblings().removeClass("active");
     }); ////////인트로 각 이름 호버할 시//////////////
+
+    /*배너이미지 돌아가기*/
+    var banimg = $(".ban_img_box div");
+    var banbul = $(".ban_bul li")
+    var seq = 0;
+    setInterval(function () {
+        seq++;
+        if (seq === 5) seq = 0;
+
+        $(".ban_txt_li").empty().append('<li><h3><a href="#">' + bantit[seq] + '</a></h3></li><li><a href="#">' + banwriter[seq] + '<span>' + bantrans[seq] + '</span></a></li>');
+        banimg.eq(seq).addClass("active").siblings().removeClass("active");
+
+        banbul.eq(seq).addClass("on").siblings().removeClass("on");
+    }, 4000);
 
 
     /*새로나온책 포문돌리기*/
@@ -38,8 +75,6 @@ $(function () {
         pager: false,
         slideWidth: 600
     });
-
-
 
 
 
