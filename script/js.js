@@ -1,15 +1,15 @@
 var msg = [
         "빌 스트리트가 말할 수 있다면",
-        "올랜도",
         "단지 흑인이라서, 다른 이유는 없다",
-        "바이러스를 이기는 영양제"
+        "인도로 가는 길",
+        "아이의 뇌는 스스로 배운다"
     ];
 
 var writer = [
         "제임스 볼드윈",
-        "버지니아 울프",
         "제임스 볼드윈",
-        "김경철, 김해영"
+        "E. M. 포스터",
+        "셀린 알바레즈"
     ];
 
 var bantit = ["아이를 위한 정신 의학",
@@ -54,7 +54,7 @@ $(function () {
         seq++;
         if (seq === 5) seq = 0;
 
-        $(".ban_txt_li").empty().append('<li><h3><a href="#">' + bantit[seq] + '</a></h3></li><li><a href="#">' + banwriter[seq] + '<span>' + bantrans[seq] + '</span></a></li>');
+        $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[seq] + '</a></h3></li><li><a href="#">' + banwriter[seq] + '<span>' + bantrans[seq] + '</span></a></li>');
         banimg.eq(seq).addClass("active").siblings().removeClass("active");
 
         banbul.eq(seq).addClass("on").siblings().removeClass("on");
@@ -76,7 +76,25 @@ $(function () {
         slideWidth: 600
     });
 
-
+/*대표작가 사진 호버하면*/
+    $(".author_list li a div ").hide();
+    
+    $(".author_list li").hover(function(){
+        $(this).find("div").stop().fadeIn(300);
+    }, function(){
+        $(this).find("div").stop().fadeOut(300);
+    });
+    
+    /*격자무늬 메뉴 호버하면*/
+    $(".sechover").hide();
+    
+    $(".boxs_wrap section").hover(function(){
+        $(this).find(".sechover").stop().fadeIn(200);
+    },function(){
+        $(this).find(".sechover").stop().fadeOut(200);
+    });
+    
+    
 
 
 }); /////////////제이쿼리블록//////////////

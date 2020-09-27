@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/*열린책들 서브사이트 스타일시트*/
+/*#C5161D*/
+
+@import url(../css/common.css);
+
+.inbox {
+    background-color: #f3f8f3;
+    padding: 0 25px;
+}
+
+.bstit {
+    width: 40%;
+    height: 20vh;
+    text-align: center;
+    position: relative;
+    padding-top: 6vh;
+    margin: 0 auto;
+}
+
+.bstit small {
+    font-size: 22px;
+}
+
+.bstit p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+}
+
+.bstit::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #C5161D;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner {
+    width: 100%;
+    height: 40vmin;
+    background-color: #C5161D;
+}
+
+.bannerimg {
+    width: 1400px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/bg/author.jpg) no-repeat center/cover;
+}
+
+
+.bannerimg a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.bannerlogo {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.bannerlogo img {
+    width: 70px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #2E2E2E;
+}
+
+.authornav {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+}
+
+.authornav li {
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+}
+
+.authornav a {
+    color: #222;
+}
+
+.authornav .here {
+    background-color: #C5161D;
+}
+
+.authornav .here a {
+    color: #fafafa;
+}
+
+.auth_box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.auth_imgbox {
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.auth_img {
+    background: url(../images/writers/verber2.jpg) no-repeat top/cover;
+}
+
+.rbx::before {
+    content: '';
+    display: block;
+    padding-top: 115%;
+}
+
+.auth_name {
+    width: 20vw;
+    height: 100px;
+    background-color: #fff;
+    color: #222;
+    text-align: center;
+    line-height: 100px;
+    font-size: 33px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+}
+
+.auth_txt {
+    width: 20vw;
+    height: 170px;
+    background-color: #fff;
+    color: #222;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    word-break: keep-all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
