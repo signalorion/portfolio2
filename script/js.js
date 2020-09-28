@@ -59,6 +59,15 @@ $(function () {
 
         banbul.eq(seq).addClass("on").siblings().removeClass("on");
     }, 4000);
+    
+    /*블릿 누르면 이동하기*/
+    $(".ban_bul li").click(function(){
+        $(this).addClass("on").siblings().removeClass("on");
+        var thisbul = $(this).index();
+        console.log(thisbul);
+        
+        
+    });////////블릿누르면 이동////////////////
 
 
     /*새로나온책 포문돌리기*/
