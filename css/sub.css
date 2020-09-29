@@ -8,6 +8,8 @@
 .inbox {
     background-color: #f3f8f3;
     padding: 0 25px;
+    
+    
 }
 
 .bstit {
@@ -147,13 +149,14 @@ body {
 
 .wbg {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: #fff;
-    top: 50vh;
+    top: 0vh;
     left: 0;
     border: 2px solid #dddddd;
+    z-index: 77;
 }
 
 .bsintro {
@@ -176,7 +179,10 @@ body {
 
 .bsintro p {
     line-height: 30px;
+    height: 40vh;
+    overflow: auto;
 }/*왜 height조정이 안될까...?*/
+
 
 .bsintro_img {
     width: 30%;

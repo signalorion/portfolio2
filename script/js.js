@@ -1,4 +1,4 @@
-var msg = [
+/*var msg = [
         "빌 스트리트가 말할 수 있다면",
         "단지 흑인이라서, 다른 이유는 없다",
         "인도로 가는 길",
@@ -10,7 +10,7 @@ var writer = [
         "제임스 볼드윈",
         "E. M. 포스터",
         "셀린 알바레즈"
-    ];
+    ];*/
 
 var bantit = ["아이를 위한 정신 의학",
             "중국과 협상하기",
@@ -59,21 +59,28 @@ $(function () {
 
         banbul.eq(seq).addClass("on").siblings().removeClass("on");
     }, 4000);
-    
+
     /*블릿 누르면 이동하기*/
-    $(".ban_bul li").click(function(){
+    $(".ban_bul li").click(function () {
         $(this).addClass("on").siblings().removeClass("on");
         var thisbul = $(this).index();
         console.log(thisbul);
-        
-        
-    });////////블릿누르면 이동////////////////
+
+
+    }); ////////블릿누르면 이동////////////////
 
 
     /*새로나온책 포문돌리기*/
-    for (var i = 0; i < 4; i++) {
+    /*for (var i = 0; i < 4; i++) {
         $(".newlist").append('<li><a href="#"><img src="images/books/' + (i + 1) + '.jpg" alt="새책"><b>' + msg[i] + '</b><p>' + writer[i] + '</p></a></li>');
-    };
+    };*/
+
+    /*새로나온 책*/
+    $(".newlist li a").click(function (e) {
+        e.preventDefault();
+
+
+    }); ////////click////////////////
 
     /*이벤트 배너 좌로 넘어가기*/
 
@@ -85,25 +92,34 @@ $(function () {
         slideWidth: 600
     });
 
-/*대표작가 사진 호버하면*/
+    /*대표작가 사진 호버하면*/
     $(".author_list li a div ").hide();
-    
-    $(".author_list li").hover(function(){
+
+    $(".author_list li").hover(function () {
         $(this).find("div").stop().fadeIn(300);
-    }, function(){
+    }, function () {
         $(this).find("div").stop().fadeOut(300);
     });
-    
+
+    /*대표작가 사진 클릭하면*/
+    $(".author_list a").click(function (e) {
+        e.preventDefault();
+        var idx = $(this).parent().index();
+
+        location.href = "authors.html?sno=" + idx;
+
+    });
+
     /*격자무늬 메뉴 호버하면*/
     $(".sechover").hide();
-    
-    $(".boxs_wrap section").hover(function(){
+
+    $(".boxs_wrap section").hover(function () {
         $(this).find(".sechover").stop().fadeIn(200);
-    },function(){
+    }, function () {
         $(this).find(".sechover").stop().fadeOut(200);
     });
-    
-    
+
+
 
 
 }); /////////////제이쿼리블록//////////////
