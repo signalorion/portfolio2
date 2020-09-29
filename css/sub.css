@@ -179,7 +179,7 @@ body {
 
 .bsintro p {
     line-height: 30px;
-    height: 40vh;
+    height: 34vh;
     overflow: auto;
 }/*왜 height조정이 안될까...?*/
 
@@ -187,7 +187,7 @@ body {
 .bsintro_img {
     width: 30%;
     margin: 0 auto;
-    padding-top: 5%;
+    padding-top: 3%;
     text-align: center;
 }
 

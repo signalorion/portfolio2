@@ -45,10 +45,10 @@ var pm = location.href; //url읽어옴
 pm = pm.split("?")[1].split("=")[1];
 
 var bookinfo = [
-            ["제목1,발행일1", "제목1,발행일1", "제목1,발행일1", "제목1,발행일1"],
-            ["제목21,발행일1", "제목21,발행일1", "제목21,발행일1", "제목21,발행일1"],
-            ["제목31,발행일1", "제목41,발행일1", "제목41,발행일1", "제목41,발행일1"],
-            ["제목41,발행일1", "제목41,발행일1", "제목41,발행일1", "제목41,발행일1"]
+            ["개미,2001년 01월 30일 발행", "신 (1~6권),2008년 11월 20일 발행", "제 3인류 (1~6권),2013년 10월 23일 발행", "잠 (1~2권),2017년 06월 30일 발행"],
+            ["칠레의 밤,2010년 02월 05일 발행", "야만스러운 탐정들(1~2권),2012년 06월 15일 발행", "2666(1~5권),2013년 12월 19일 발행", "아이스링크,2014년 05월 15일 발행"],
+            ["달의 궁전,2000년 03월 15일", "오기렌의 크리스마스 이야기,2001년 07월 31일 발행", "빵굽는 타자기,2002년 01월 31일 발행", "뉴욕 3부작,2003년 03월 30일"],
+            ["갈래 씨 홀로 죽다,2011년 05월 20일 발행", "리버티 바,2011년 12월 20일 발행", "매그레,2012년 01월 20일 발행", "마제스틱 호텔의 지하,2017년 08년 20일"]
         ];
 
 $(function () {
@@ -66,28 +66,70 @@ $(function () {
         $(".auth_box").find(".auth_txt").empty().html(auth_txt[authornum]);
 
         $(".auth_img").css({
-            background: " url(../images/writers/intro" + authornum + ".jpg) no-repeat top/cover"
+            background: " url(images/writers/intro" + authornum + ".jpg) no-repeat top/cover"
         });
 
         $(".intro1").empty().html(intro1[authornum]);
         $(".intro2").empty().html(intro2[authornum]);
         $(".intro3").empty().html(intro3[authornum]);
 
+        
+        ///////////작가에 맞춰서 버튼, 책 세팅 바꾸기///////////
         if (authornum === 1) {
             $(".next_author").show();
             $(".next_author a span").empty().text("폴 오스터");
+
+            //책정보변경
+            $(".bookli li").each(function (idx, ele) {
+                $("img", this).attr("src", "images/books/auth" + authornum + "/a" + (idx + 1) + ".jpg");
+
+                // 책정보 셋팅
+                $("h5", this).text(bookinfo[authornum][idx].split(",")[0]);
+                $("p", this).text(bookinfo[authornum][idx].split(",")[1]);
+
+            }); /////////// each //////////////////
         } else if (authornum === 2) {
             $(".next_author").show();
             $(".next_author a span").empty().text("조르주 심농");
+
+            //책정보변경
+            $(".bookli li").each(function (idx, ele) {
+                $("img", this).attr("src", "images/books/auth" + authornum + "/a" + (idx + 1) + ".jpg");
+
+                // 책정보 셋팅
+                $("h5", this).text(bookinfo[authornum][idx].split(",")[0]);
+                $("p", this).text(bookinfo[authornum][idx].split(",")[1]);
+
+            }); /////////// each //////////////////
         } else if (authornum === 0) {
             $(".next_author").show();
             $(".next_author a span").empty().text("로베르토 볼라뇨");
 
-        } else {
+            //책정보변경
+            $(".bookli li").each(function (idx, ele) {
+                $("img", this).attr("src", "images/books/auth" + authornum + "/a" + (idx + 1) + ".jpg");
+
+                // 책정보 셋팅
+                $("h5", this).text(bookinfo[authornum][idx].split(",")[0]);
+                $("p", this).text(bookinfo[authornum][idx].split(",")[1]);
+
+            }); /////////// each //////////////////
+
+        } else { //3
             $(".next_author").hide();
+            //책정보변경
+            $(".bookli li").each(function (idx, ele) {
+                $("img", this).attr("src", "images/books/auth" + authornum + "/a" + (idx + 1) + ".jpg");
+
+                // 책정보 셋팅
+                $("h5", this).text(bookinfo[authornum][idx].split(",")[0]);
+                $("p", this).text(bookinfo[authornum][idx].split(",")[1]);
+
+            }); /////////// each //////////////////
         }
 
-    }); ////////작가이름클릭시////////////
+    }); ////////작가이름클릭시////////////////////////////
+    //////////////////////////////////////////////////////
 
     ///다음작가 버튼 클릭시
     $(".next_author").click(function () {
@@ -95,11 +137,10 @@ $(function () {
     });
 
 
-    // 파라미터에 따라 선택항목을 트리거한다!
+    // 파라미터에 따라 선택항목을 트리거한다!(메인페이지에서 사진클릭시)
     $(".authornav li").eq(pm).trigger("click");
-    
-    // 홈화면에서 클릭시
 
+    // 책 사진 셋팅 //파라미터에 맞춘거라 지우면 안됨
     $(".bookli li").each(function (idx, ele) {
         $("img", this).attr("src", "images/books/auth" + pm + "/a" + (idx + 1) + ".jpg");
 
@@ -107,9 +148,16 @@ $(function () {
         $("h5", this).text(bookinfo[pm][idx].split(",")[0]);
         $("p", this).text(bookinfo[pm][idx].split(",")[1]);
 
-
-
     }); /////////// each //////////////////
+
+    /*sno를 바꾸자*/
+    /*$(".authornav li a").click(function (e) {
+        e.preventDefault();
+        var idx = $(this).parent().index();
+
+        location.href = "authors.html?sno=" + idx;
+
+    });///좋긴한데...화면이 너무 번쩍거림....//////*/
 
 
 
