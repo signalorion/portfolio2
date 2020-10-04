@@ -80,6 +80,25 @@ nav {
     height: 50px;
     background-color: #2E2E2E;
 }
+.nav_list{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.nav_list a{
+    color: #eaeaea;
+    line-height: 50px;
+    
+}
+.nav_list li{
+    width: 33%;
+    text-align: center;
+}
+.nav_on{
+    background-color: #C5161D;
+    font-weight: 600;
+    font-size: 18px;
+}
 
 .authornav {
     display: flex;

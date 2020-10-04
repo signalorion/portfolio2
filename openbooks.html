@@ -13,6 +13,8 @@
     <script src="script/js.js"></script>
     <script src="script/jquery.bxslider.js"></script>
     <!--슬라이더-->
+    <script src="script/jQueryRotate.js"></script>
+    <!--로테이트-->
 </head>
 
 <body>
@@ -41,17 +43,19 @@
 
             <div class="main_wrap">
                 <div class="bestseller">
-                    <a href="bestseller.html"><h4>BESTSELLER <small>베스트셀러</small><span>더보기 <span class="bsplus">＋</span></span></h4></a>
+                    <a href="bestseller.html">
+                        <h4>BESTSELLER <small>베스트셀러</small><span>더보기 <span class="bsplus">＋</span></span></h4>
+                    </a>
                     <div class="best_wrap">
                         <div class="best_txt">
                             <ul class="best_txt_li">
-                                <li><a href="#">
+                                <li><a href="bestseller.html">
                                         <h3>기억</h3>
                                     </a></li>
                                 <li><a href="#">베르나르 베르베르<span>전미연 옮김</span></a></li>
                             </ul>
                         </div>
-                        <a href="#" class="best_img"><img src="images/books/kiuk1.jpg" alt="베스트셀러"></a>
+                        <a href="bestseller.html" class="best_img"><img src="images/books/kiuk1.jpg" alt="베스트셀러"></a>
                     </div>
                 </div>
             </div>
@@ -62,27 +66,35 @@
                     <p>새로나온 책</p>
                     <a href="newbook.html" class="newplus"><span>더보기 <span class="bsplus">＋</span></span></a>
                     <ul class="newlist">
-                        <li><a href="#"><div class="newli_img rbx">
-                            <img src="images/books/1.jpg" alt="빌 스트리트가 말할 수 있다면" class="ibx">
-                        </div></a>
+                        <li><a href="#">
+                                <div class="newli_img rbx">
+                                    <img src="images/books/1.jpg" alt="빌 스트리트가 말할 수 있다면" class="ibx">
+                                </div>
+                            </a>
                             <b>빌 스트리트가 말할 수 있다면</b>
                             <p>제임스 볼드윈</p>
                         </li>
-                        <li><a href="#"><div class="newli_img rbx">
-                            <img src="images/books/2.jpg" alt="단지 흑인이라서, 다른 이유는 없다" class="ibx">
-                        </div></a>
+                        <li><a href="#">
+                                <div class="newli_img rbx">
+                                    <img src="images/books/2.jpg" alt="단지 흑인이라서, 다른 이유는 없다" class="ibx">
+                                </div>
+                            </a>
                             <b>단지 흑인이라서, 다른 이유는 없다</b>
                             <p>제임스 볼드윈</p>
                         </li>
-                        <li><a href="#"><div class="newli_img rbx">
-                            <img src="images/books/3.jpg" alt="인도로 가는 길" class="ibx">
-                        </div></a>
+                        <li><a href="#">
+                                <div class="newli_img rbx">
+                                    <img src="images/books/3.jpg" alt="인도로 가는 길" class="ibx">
+                                </div>
+                            </a>
                             <b>인도로 가는 길</b>
                             <p>E. M. 포스터</p>
                         </li>
-                        <li><a href="#"><div class="newli_img rbx">
-                            <img src="images/books/4.jpg" alt="아이의 뇌는 스스로 배운다" class="ibx">
-                        </div></a>
+                        <li><a href="#">
+                                <div class="newli_img rbx">
+                                    <img src="images/books/4.jpg" alt="아이의 뇌는 스스로 배운다" class="ibx">
+                                </div>
+                            </a>
                             <b>아이의 뇌는 스스로 배운다</b>
                             <p>셀린 알바레즈</p>
                         </li>
@@ -92,10 +104,18 @@
                     <h5>AUTHOR</h5>
                     <p>열린책들 주요작가</p>
                     <ul class="author_list">
-                        <li><a href="authors.html"><div>베르나르 베르베르</div></a></li>
-                        <li><a href="#"><div>로베르토 볼라뇨</div></a></li>
-                        <li><a href="#"><div>폴 오스터</div></a></li>
-                        <li><a href="#"><div>조르주 심농</div></a></li>
+                        <li><a href="authors.html">
+                                <div>베르나르 베르베르</div>
+                            </a></li>
+                        <li><a href="#">
+                                <div>로베르토 볼라뇨</div>
+                            </a></li>
+                        <li><a href="#">
+                                <div>폴 오스터</div>
+                            </a></li>
+                        <li><a href="#">
+                                <div>조르주 심농</div>
+                            </a></li>
                     </ul>
 
                 </section>
@@ -108,14 +128,14 @@
                     <section class="collect">
                         <a href="#">
                             <h6>열린책들 전집</h6>
-                            <div  class="sechover">전 세계 최초 출판된 움베르트 에코 저작집 등 열린책들의 다양한 컬렉션을 만나보세요.</div>
+                            <div class="sechover">전 세계 최초 출판된 움베르트 에코 저작집 등 열린책들의 다양한 컬렉션을 만나보세요.</div>
 
                         </a>
                     </section>
                     <section class="ebook">
                         <a href="#">
                             <h6>열린책들 전자책</h6>
-                            <div  class="sechover">나만의 클라우드 서재, 열린책들의 작품을 전자책으로 만나보세요.</div>
+                            <div class="sechover">나만의 클라우드 서재, 열린책들의 작품을 전자책으로 만나보세요.</div>
 
                         </a>
                     </section>
@@ -131,7 +151,7 @@
 
                         <h6>이벤트</h6>
                     </section>
-                    <section class="notice">
+                    <!--<section class="notice">
                         <a href="#">
                             <h6>열린책들 소식</h6>
                         </a>
@@ -140,7 +160,7 @@
                         <a href="#">
                             <h6>독자게시판</h6>
                         </a>
-                    </section>
+                    </section>-->
                 </div>
 
                 <div class="cbox3">
@@ -161,41 +181,40 @@
 
             <!--편집자 추천도서-->
             <div class="editer_recomm">
-                <h6>편집자 추천도서</h6>
-                <ul class="recomm">
-                    <li class="recomm_li">
-                        <a href="#">
-                            <!--<img src="images/books/recomm1.jpg" alt="추천1">-->
-                            <span class="recomm_img bimg1"></span>
-                            <b>서울 선언</b>
-                            <p>김시덕</p>
-                        </a>
-                    </li>
-                    <li class="recomm_li">
-                        <a href="#">
-                            <span class="recomm_img bimg2"></span>
-                            <!--<img src="images/books/recomm2.jpg" alt="추천2">-->
-                            <b>사흘 그리고 한 인생</b>
-                            <p>피에르 르메트르</p>
-                        </a>
-                    </li>
-                    <li class="recomm_li">
-                        <a href="#">
-                            <span class="recomm_img bimg3"></span>
-                            <!--<img src="images/books/recomm3.jpg" alt="추천3">-->
-                            <b>경제 규칙 다시 쓰기</b>
-                            <p>조지프 스티글리츠</p>
-                        </a>
-                    </li>
-                    <li class="recomm_li">
-                        <a href="#">
+                <div class="recomm_show">
+                    <h6>편집자 추천도서</h6>
+                    <ul class="recomm">
+                        <li class="recomm_li">
+                            <a href="#">
+                                <span class="recomm_img bimg1"></span>
+                                <b>서울 선언</b>
+                                <p>김시덕</p>
+                            </a>
+                        </li>
+                        <li class="recomm_li">
+                            <a href="#">
+                                <span class="recomm_img bimg2"></span>
+                                <b>사흘 그리고 한 인생</b>
+                                <p>피에르 르메트르</p>
+                            </a>
+                        </li>
+                        <li class="recomm_li">
+                            <a href="#">
+                                <span class="recomm_img bimg3"></span>
+                                <b>경제 규칙 다시 쓰기</b>
+                                <p>조지프 스티글리츠</p>
+                            </a>
+                        </li>
+                        <li class="recomm_li">
                             <span class="recomm_img bimg4"></span>
-                            <!--<img src="images/books/recomm4.jpg" alt="추천4">-->
                             <b>열린책들 도서목록</b>
                             <p></p>
-                        </a>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recomm_hidden clearboth">
+
+                </div>
             </div>
 
         </div>
@@ -225,15 +244,15 @@
                 <div class="ban_img5"><a href="#"></a></div>
             </div>
         </div>
-        
+
         <div class="nextsite">
             <p>고급 예술 읽기의 또 다른 재미가 시작됩니다.</p>
             <img src="images/mime_logo.png" alt="미메시스로고">
             <a href="#" class="nextsite_go"><span>바로가기</span></a>
         </div>
-        
-        
-        
+
+
+
         <footer>
             <div class="footerlogo">
                 <img src="images/footerlogo.jpg" alt="푸터로고">
@@ -259,7 +278,169 @@
                 <li><a href="https://blog.naver.com/openbooks21" target="_blank"><img src="images/icons/blog.jpg" alt="블로그바로가기"></a></li>
             </ul>
         </footer>
+
+        <!--새로나온 책 클릭시-->
+        <div class="newpopup_box">
+            <div class="newpopup_fix">
+                <div class="newpopup_wrap">
+                    <div class="newbook nbn0">
+                        <div class="newbookimg  nb1"></div>
+                        <div class="newbookintro_box">
+                            <b>빌 스트리트가 말할 수 있다면</b>
+                            <p class="new_writer">제임스 볼드윈</p>
+                            <p class="newintro_full"><span class="newintro">모든 흑인이 태어난 곳, 빌 스트리트<br>
+                                    그곳에서 서로를 위해 버티는 한 연인의 잔인한 진실</span>
+
+                                20세기 미국 현대 문학사의 위대한 축이자 민권 운동가인 제임스 볼드윈의 사랑 이야기 &lt;빌 스트리트가 말할 수 있다면&gt;이 열린책들에서 출간되었다. 1970년대 미국, 인종 차별로 인한 고통과 분노가 깔려 있는 시간과 공간을 배경으로, 폭력적이고 차별적이고 부당한 처벌을 받는 한 연인의 이야기가 담긴 장편소설이다. 이 소설은 순수하고 희생적인 사랑을 통해 당시 인종 문제에 영향력 있는 목소리를 냈던 민권 운동가 볼드윈이 서정적으로 그리는, 암울하고 희망이 없고 그러나 지극히 현실적인 흑인 사회의 초상이다.<br>
+                                두 주인공과 주변인물들이 겪는 고통의 원인은 &lt;인종 차별&gt;이라는 너무도 명확하고 단순한 것이지만, 시간이 지날수록 손 쓸 수도, 헤어날 수 없는 비극의 수렁이 된다. 제임스 볼드윈은 선한 인물들이 영문을 알 수 없는 비극 속에서 어떻게 연대하고, 어떻게 인간의 강인함을 발휘할 수 있는지 보여 주며 한줄기 빛을 그려 넣는다.<br>
+                                할렘의 한 거리, 어릴 때부터 이웃이었던 티시와 포니는 함께 미래를 꿈꾸는 연인으로 발전한다. 둘은 결혼을 약속하고 같이 살 집을 겨우 마련했다. 하지만 어느 날 경찰이 들이닥쳐 이유 없이 포니를 체포했고, 단지 흑인이라는 이유로 강간 사건의 용의자가 되어 감옥에 들어간다. 마침 티시는 아기를 가지고, 포니의 무죄를 입증하기 위해 그리고 새롭게 태어날 새 생명을 위해 티시와 그녀의 가족들은 고통스러운 하루하루를 보낸다. 그러나 포니를 용의자로 지목했던 로저스 부인이 사라지고, 포니의 무죄 입증은 갈수록 어려워진다.</p>
+                        </div>
+                    </div>
+                    <div class="newbook nbn1">
+                        <div class="newbookimg  nb2"></div>
+                        <div class="newbookintro_box">
+                            <b>단지 흑인이라서, 다른 이유는 없다</b>
+                            <p class="new_writer">제임스 볼드윈</p>
+                            <p class="newintro_full">
+                                <span class="newintro">1960년대 미국 전역을 충격으로 몰아넣은 강력하고 도발적인 선언문</span>
+
+                                20세기 미국 현대 문학사의 위대한 축이자 민권 운동가인 제임스 볼드윈의 에세이 &lt;단지 흑인이라서, 다른 이유는 없다&gt;가 열린책들에서 출간되었다. 이 책의 원제는 &lt;The fire next time&gt;으로, 1963년에 단행본으로 발행되었다. 예언적이고, 맹렬하고, 영적이고, 야만적이고, 명료한 이 두 편의 에세이로 제임스 볼드윈은 미국에서 가장 중요한 작가 중 하나로 자리매김한다.<br>
+                                이 책은 두 개의 편지글로 구성된다. 첫 번째 에세이는 자신의 이름과 같은 조카에게 보내는 &lt;나의 감옥이 흔들렸다:노예 해방 1백 주년을 맞아 조카에게 보내는 편지&gt;이고, 두 번째 글인 &lt;십자가 아래에서: 내 마음속 구역에서 보낸 편지&gt;는 모든 미국인에게 보내는 글이다.<br>
+                                볼드윈은 14살 조카에게 애정 어린 말투로 백인들의 사회에서 굳건히 살아남길 당부한다. 자신의 어린 시절의 이야기와 가족의 이야기를 통해 이 사회에서 개개인의 흑인이 차지하는 위치를 알려주고, 각성하지 않으면 지금까지의 모든 것이 반복될 뿐이라고 말한다. 단지 흑인이라는 이유만으로 겪어야 하는 일들은 &lt;네 열등함의 증표가 아니라 그들의 비인간성과 두려움의 증거&gt;라고 상기시키며 &lt;수용&gt;과 &lt;통합&gt;이라는 단어의 이면을 보라고, 사실 백인과 흑인 중 상대를 수용해야 할 주체는 백인이 아닌 흑인이라고 알려 준다.(&lt;옮긴이의 말&gt; 중에서) 친밀한 혈육에게 보내는 글을 통해 인종 차별의 유산이 대물림되지 않기를 바라는 강력한 마음이 드러난다.<br>
+                                두 번째 에세이는 이 책의 대부분을 차지하는 중요한 글로, 기독교에 대한 자신의 경험, 흑백 분리를 주장하는 이슬람 종교 인사와의 만남 등을 통해 종교의 비논리성을 밝히고, &lt;흑인 사회의 독립과 백인에 대한 복수&gt;라는 그들의 주장에 개탄을 표한다. 이어서 그는 그 모든 것을 아울러 자신만의 해법을 내놓는다. 그는 &lt;미국이 흑인과 백인 둘 다로 이루어진 국가임을, 그리고 서로가 강력히 필요한 존재임을 인정하라&gt;며 개개인의 인식과 책임의 필요성을 강조했다. 그리고 지금 행동하지 않으면 노아의 시대에 홍수로 인류가 심판을 받았듯, 다음번엔 불(The fire next time)로 심판을 받게 될 것이라는 예언적인 말로 마무리한다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="newbook nbn2">
+                        <div class="newbookimg nb3"></div>
+                        <div class="newbookintro_box">
+                            <b>인도로 가는 길</b>
+                            <p class="new_writer">E. M. 포스터</p>
+                            <p class="newintro_full">
+                                <span class="newintro">“위대한 작품…… 놀라운 통찰력과 탁월한 묘사, 그리고 대가다운 명징한 의식” ― 데일리 텔레그래프<br>
+
+                                    『타임』 선정 &lt;현대 100대 영문 소설&gt;<br>
+                                    모던 라이브러리 선정 &lt;20세기 영문 소설 100선&gt;<br>
+                                    1924년 제임스 테이트 블랙 기념상 수상<br>
+                                    1925년 페미나상 수상</span>
+
+                                영국의 문호 E. M. 포스터의 『인도로 가는 길』이 영문학 번역가 민승남 씨의 번역으로 열린책들에서 출간되었다. 열린책들 세계문학 253번. 포스터의 마지막 장편소설이자 대표작인 이 작품은 1924년 발표되었으며 1984년 데이비드 린 감독에 의해 영화화되어 세계적으로 널리 알려졌다. 『타임』 선정 &lt;현대 100대 영문 소설&gt;, 모던 라이브러리 선정 &lt;20세기 영문 소설 100선&gt;에 선정되는 등 영국 소설을 대표하는 작품으로 평가받고 있다.<br>
+
+                                아델라 퀘스티드는 약혼자의 어머니 무어 부인과 함께 인도 땅에 도착한다. 두 여인은 그곳에서 진실한 인도와 대면하기를 원하지만 약혼자 로니를 비롯한 그곳의 영국인들은 그러한 관심을 초심자의 호기심으로 치부하고 만다. 그러던 중 무어 부인은 젊은 이슬람교 의사 아지즈를 만나 민족을 초월한 우정을 나누고, 아지즈는 이들을 마라바르 동굴로의 소풍에 초대한다. 그러나 아델라가 동굴 속에서 성추행을 당했다고 고발하면서 사태는 걷잡을 수 없는 소용돌이에 빠져드는데…….<br>
+
+                                『인도로 가는 길』은 출간 즉시 영국은 물론 미국에서까지 선풍적인 반향을 일으키며 포스터의 대표작이 된 소설이다. 포스터가 대중적인 성공을 거둔 것은 이 작품이 처음이었다. 실제로 두 차례에 걸쳐 인도를 방문하기도 하였으며 양국의 관계와 식민통치에 지속적인 관심을 보여 왔던 포스터는 영국령의 인도의 한 도시라는 응축된 사회적 상황을 배경으로 영국인들과 인도인들 사이에서 빚어지는 첨예한 대립과 이를 초월하여 화합으로 나아가려 하는 개인들의 모습을 치밀하게 그려 내고 있다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="newbook nbn3">
+                        <div class="newbookimg nb4"></div>
+                        <div class="newbookintro_box">
+                            <b>아이의 뇌는 스스로 배운다</b>
+                            <p class="new_writer">셀린 알바레즈</p>
+                            <p class="newintro_full">
+                                <span class="newintro">뇌 과학과 프랑스 자율 교육의 만남!<br>
+                                    프랑스 종합 베스트셀러 1위<br>
+                                    2017년 프시콜로지-프낙상 수상<br><br>
+                                    자율 VS 규율 </span>
+
+                                폭넓은 자율 속에서 성장한 아이가 더 잘 자랄까? 엄격한 규율로 가르친 아이가 더 잘 자랄까? 아이들의 성공적인 미래를 결정할 양육 방식은 어느 쪽일까?<br>
+                                『아이의 뇌는 스스로 배운다』는 프랑스 육아 교육의 혁신을 이끌고 있는 젊은 교육자 셀린 알바레즈의 첫 번째 저술로, 뇌 과학을 기초로 프랑스 빈민 지대의 한 공립 유치원에서 시행했던 &lt;자율 교육&gt; 실험을 소개하고 있다. 프랑스 기초 교육 실패(초등학생의 40퍼센트가 학습 부진 상태로 중학교에 올라간다)와 학력 불평등이 사회 문제로 불거지던 시점에 출간되며 &lt;자율 대 규율&gt;이라는 양육 방식을 둘러싸고 큰 논쟁을 불러왔다. 특히 양육자의 개입을 최소화하고 아이의 자율성을 극대화하라는 그녀의 제안은 학부모와 교사 사이에서 큰 반향을 일으켰고, 2016년 출간 즉시 프랑스 종합 베스트셀러 1위에 올랐다.<br>
+                                알바레즈는 미취학 시기의 아이들을 대상으로 아이의 타고난 &lt;배움 본능&gt;과 &lt;선한 본성&gt;에 맞춤한 교육을 시행하면 탁월한 교육 효과가 나타날 것으로 확신했고, &lt;단순히 아이들을 가르치기 위해서가 아니라 교육 시스템을 바꾸기 위해&gt; 직접 교육 현장으로 뛰어들었다. 그녀는 교육 당국에게 교육 방식에 관한 전권을 달라고 요청했고, 젠빌리에 유치원에서 만 3~5세 아동 25명을 대상으로 3년간(2011~2014년) 교육학적 실험에 착수했다. 최신 뇌 과학과 자율 교육 전통(프랑스 교육학의 거장인 장 이타르, 에두아르 세갱, 마리아 몬테소리)을 접목한 그녀의 교육 방식은 곧바로 &lt;폭탄 같은 효과&gt;를 가져왔다. 이 책은 그동안 우리 육아 교육이 아이 뇌의 잠재력을 얼마나 과소평가해 왔으며, 어른의 역할을 얼마나 과장해 왔는지 증명한다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--이동버튼-->
+            <div class="newpop_left"><img src="images/icons/left_arrow.png" alt="새로나온책 다음"></div>
+            <div class="newpop_right"><img src="images/icons/right_arrow.png" alt="새로나온책 전"></div>
+            <div class="newpop_close">
+                <img src="images/icons/cross_wt.png" alt="새로나온책 팝업 닫기">
+            </div>
+        </div>
+        <!--새로나온 책 클릭시 팝업-->
+
+        <!--전집 클릭시 팝업-->
+        <div class="box_popup">
+            <div class="boxpop_close">
+                <img src="images/icons/cross_wt.png" alt="새로나온책 팝업 닫기">
+            </div>
+            <div class="box_fix">
+                <div class="boxpopup_wrap">
+                    <div class="thisboxpopup">
+                        <div class="thisboximg img0"></div>
+                        <big>움베르트 에코 마니아 컬렉션</big>
+                        <div class="thisbox_intro">
+                            50년 지적 여정의 종착지
+                        </div>
+                    </div>
+                    <div class="thisboxpopup">
+                        <div class="thisboximg img1"></div>
+                        <big>니코스 카잔차키스 </big>
+                        <div class="thisbox_intro">
+                            니코스 카잔차키스 사망 50주기를 기리는 최초의 한국어판 전집 30권
+                        </div>
+                    </div>
+                    <div class="thisboxpopup">
+                        <div class="thisboximg img2"></div>
+                        <big>표도르 도스또예프스끼</big>
+                        <div class="thisbox_intro">
+                            20세기 문학과 철학의 패스워드
+                        </div>
+                    </div>
+                    <div class="thisboxpopup">
+                        <div class="thisboximg img3"></div>
+                        <big>지그문트 프로이트</big>
+                        <div class="thisbox_intro">
+                            무의식을 개척한 현대 정신분석학의 태두
+                        </div>
+                    </div>
+                    <div class="thisboxpopup">
+                        <div class="thisboximg img4"></div>
+                        <big>한국 대표 시인 초간본 총서</big>
+                        <div class="thisbox_intro">
+                            한국 현대시의 100년을 본모습 그대로 재현<br>문학 평론가 이남호 교수(고려대) 책임 편집<br>한국 현대화가 20인이 표지화에 참여
+                        </div>
+                    </div>
+                </div><!--전집클릭시-->
+                
+                <div class="thisboxpopup ebook_popup">
+                    <div class="ebook_popimg rbx" ><img src="images/ebook.png" alt="" class="ibx"></div>
+                    <div class="ebooktit">
+                        <big>열린책들 세계문학 앱</big>
+                        <div class="ebook_popintro">
+                            <b>나만의 클라우드 서재</b>
+                            <small>언제 어디서나, 그리고 언제까지나</small>
+                            <p>이제 언제 어디서나 편리하게 세계문학 e전집을 구입하세요.<br>
+앱 안의 서점에서 구입한 도서는 기다림 없이 바로 볼 수 있고,
+영구적으로 소장 가능하며,<br>
+최대 5대의 기기에서 자유롭게 이용하실 수 있습니다.</p>
+                        </div>
+                        
+                        <div class="ebook_popintro">
+                            <b>나만의 독서 노트</b>
+                            <small>세계문학을 읽는 가장 즐거운 방법</small>
+                            <p>책을 읽으면서 작성한 메모, 밑줄, 책갈피는 &lt;독서 노트&gt;에 자동으로 기록됩니다.<br> &lt;독서 노트&gt;를 펼치면 내 독서 기록을 한눈에 확인할 수 있습니다.<br> 한 번의 터치로, 기록된 책 속 구절로 바로 이동할 수 있습니다.<br> 기록된 메모, 밑줄은 &lt;독서 노트&gt;에서 바로 공유가 가능합니다.</p>
+                        </div>
+                        
+                        <div class="ebooklink">
+                            <a href="#"><img src="images/eb_apple.gif" alt="앱스토어이동"></a>
+                            <a href="#"><img src="images/eb_google.gif" alt="구글플레이스토어이동"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--이동버튼-->
+            <div class="newpop_left"><img src="images/icons/left_arrow.png" alt="새로나온책 다음"></div>
+            <div class="newpop_right"><img src="images/icons/right_arrow.png" alt="새로나온책 전"></div>
+
+        </div>
+        <!--전집클릭시-->
+
     </div>
+    <!--오픈북스 설정 끝-->
 </body>
 
 </html>

@@ -431,12 +431,15 @@
 .newlist li:last-child {
     margin-right: 0;
 }
-.newli_img{
+
+.newli_img {
     width: 100%;
     padding-top: 55%;
 }
 
-.newli_img img{width: 100%;}
+.newli_img img {
+    width: 100%;
+}
 
 
 .newlist li b {
@@ -584,6 +587,7 @@ section > a > h6 {
 .event_box {
     position: relative;
     padding: 15px;
+
 }
 
 .event_box h6 {
@@ -617,7 +621,7 @@ section > a > h6 {
     margin-bottom: 0px !important;
 }
 
-.notice,
+/*.notice,
 .bbg {
     height: 15vh;
 }
@@ -629,7 +633,7 @@ section > a > h6 {
 
 .bbg {
     background-color: #9C2328;
-}
+}*/
 
 /*컨박스3*/
 .world {
@@ -639,7 +643,7 @@ section > a > h6 {
 
 .openbooksintro {
     background: url(../images/writers/Freud.jpg) no-repeat top/cover;
-    height: 40vh;
+    height: 35vh;
 }
 
 
@@ -654,9 +658,17 @@ section > a > h6 {
 .editer_recomm {
     width: 100%;
     height: 36vh;
+    /*height: 100vh;*/
     background-color: #fff;
     margin: 10vh 0 20vh 0;
+
+    overflow: hidden;
+}
+
+.recomm_show {
     display: flex;
+    height: 36vh;
+    width: 100%;
 }
 
 .editer_recomm h6 {
@@ -721,6 +733,45 @@ section > a > h6 {
     background: url(../images/books/recomm4.jpg)no-repeat top/cover;
 }
 
+.recomm_hidden {
+    width: 100%;
+    padding: 4vmin;
+    /*height: 64vh;*/
+}
+
+.recomm_hidden img {
+    width: 30vmin;
+    float: left;
+    margin-right: 3vmin;
+}
+
+.hidden_intro {
+    padding: 2vmin;
+    overflow: auto;
+}
+
+.hidden_intro big {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.hidden_intro .hidden_writer {
+    padding: 15px 0;
+    display: block;
+    font-size: 19px;
+}
+
+.hidden_intro p {
+    line-height: 30px;
+}
+
+.hidden_intro p b {
+    display: block;
+    color: #6f6f6f;
+    padding-bottom: 10px;
+}
 
 /****************************************편집자추천도서 끝*/
 
@@ -755,3 +806,268 @@ section > a > h6 {
     vertical-align: middle;
     margin: 0 30px;
 }
+
+
+/*새로나온 책 클릭시 팝업*/
+.newpopup_box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+}
+
+.newpopup_fix {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.newpopup_wrap {
+    width: 400%;
+    height: 100%;
+    position: relative;
+}
+
+.newbook {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    float: left;
+    padding: 2vw;
+}
+
+.newbookimg {
+    float: left;
+    width: 15vw;
+    margin-right: 1vw;
+    height: 100%;
+}
+
+.newbookimg.nb1 {
+    background: url(../images/books/1.jpg) no-repeat top/contain;
+}
+
+.newbookimg.nb2 {
+    background: url(../images/books/2.jpg) no-repeat top/contain;
+}
+
+.newbookimg.nb3 {
+    background: url(../images/books/3.jpg) no-repeat top/contain;
+}
+
+.newbookimg.nb4 {
+    background: url(../images/books/4.jpg) no-repeat top/contain;
+}
+
+.newbook b {
+    font-size: 25px;
+    margin: 1vw;
+    display: block;
+
+}
+
+.new_writer {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 2vw;
+}
+
+.newintro_full {
+    height: 43vh;
+    overflow: auto;
+}
+
+.newintro {
+    display: block;
+    font-weight: 500;
+    padding-bottom: 1vw;
+    color: #C5161D;
+}
+
+.newpop_left {
+    position: absolute;
+    top: 50%;
+    left: 10vw;
+    transform: scale(1.4);
+}
+
+.newpop_right {
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    transform: scale(1.4);
+}
+
+.newpop_close {
+    position: absolute;
+    top: 7%;
+    right: 20%;
+}
+
+.newpop_close img {
+    width: 55px;
+}
+
+/*격자무늬메뉴 클릭시*/
+.box_popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+}
+
+.box_fix {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vh;
+    overflow: hidden;
+    /*border: 8px solid #C5161D;*/
+}
+
+/*.box_fix.rbx::before {
+    content: '';
+    display: block;
+    padding-top: 60%;
+}*/
+
+.boxpopup_wrap {
+    width: 500%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.thisboxpopup {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    float: left;
+    padding: 2vw;
+}
+
+.thisboxpopup big {
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 3vh;
+    display: block;
+    position: relative;
+}
+
+.thisboxpopup big::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #C5161D;
+}
+
+.thisboximg {
+    width: 100%;
+    height: 75%;
+
+}
+
+.thisboximg.img0 {
+    background: url(../images/junjip/0.jpg) no-repeat center/contain;
+}
+
+.thisboximg.img1 {
+    background: url(../images/junjip/1.jpg) no-repeat center/contain;
+}
+
+.thisboximg.img2 {
+    background: url(../images/junjip/2.jpg) no-repeat center/contain;
+}
+
+.thisboximg.img3 {
+    background: url(../images/junjip/3.jpg) no-repeat center/contain;
+}
+
+.thisboximg.img4 {
+    background: url(../images/junjip/4.jpg) no-repeat center/contain;
+}
+
+.boxpop_close {
+    position: absolute;
+    top: 5%;
+    right: 21%;
+}
+
+.boxpop_close img {
+    width: 55px;
+}
+
+/*ebook설정*/
+.thisboxpopup.ebook_popup {
+    display: none;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+.ebook_popimg{
+    width: 40%;
+}
+
+.ebook_popimg img{
+    width: 100%;
+}
+
+.ebooktit{
+    width: 100%;
+}
+.ebooktit div{
+    padding-left: 3vw;
+}
+.ebooktit big{
+    padding-left: 1vw;
+}
+.ebook_popintro b{
+    font-size: 25px;
+    background-color: #C5161D;
+    color: white;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+.ebook_popintro small{
+    font-size: 20px;
+    padding: 1vh;
+    display: block;
+}
+
+.ebook_popintro p{
+    padding-bottom: 3vh;
+}
+
+
+
+
+
+
+
+
