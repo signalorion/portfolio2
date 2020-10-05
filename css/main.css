@@ -919,6 +919,20 @@ section > a > h6 {
 }
 
 /*격자무늬메뉴 클릭시*/
+.boxpop_left {
+    position: absolute;
+    top: 50%;
+    left: 10vw;
+    transform: scale(1.4);
+}
+
+.boxpop_right {
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    transform: scale(1.4);
+}
+
 .box_popup {
     position: fixed;
     width: 100%;
@@ -1063,6 +1077,81 @@ section > a > h6 {
 .ebook_popintro p{
     padding-bottom: 3vh;
 }
+
+/*세계문학 설정*/
+.thisboxpopup.world_popup {
+    display: none;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+.world_popimg{
+    width: 30%;
+}
+
+.world_popimg_list{
+    width: 100%;
+    
+}
+.world_popimg_list img{
+    width: 100%;
+}
+
+.worldtit{
+    width: 77%;
+}
+.world_popintro{
+    padding-left: 3vw;
+}
+.world_big{
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+}
+
+.world_big b{
+    font-size: 25px;
+    background-color: #C5161D;
+    color: white;
+    text-align: center;
+    padding: 0 1vw;
+}
+
+.world_popintro small{
+    font-size: 14px;
+    display: block;
+    padding: 1vh 0;
+    word-break:keep-all;
+    color: #888888;
+}
+.world_sub_tit{
+    padding-top: 3vh;
+}
+.world_sub_tit em{
+    font-style: normal;
+    background-color: #C5161D;
+    color: #fff;
+    padding:0 1vw;
+    font-size: 18px;
+}
+
+.world_sub_tit p{
+    color: #222;
+    font-size: 15px;
+    padding-top: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

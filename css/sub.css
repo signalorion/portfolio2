@@ -21,6 +21,9 @@
     padding-top: 6vh;
     margin: 0 auto;
 }
+.bstit.opntit{
+    height: 18vh;
+}
 
 .bstit small {
     font-size: 22px;
@@ -30,6 +33,9 @@
     font-size: 16px;
     font-weight: 400;
     color: #717171;
+}
+.bstit.opntit::after{
+    top: 12vh;
 }
 
 .bstit::after {
@@ -64,6 +70,9 @@
 .newbanner{
     background: url(../images/bg/newbook.png) no-repeat 100% 30%/cover;
 }
+.openbanner{
+    background: url(../images/bg/intro_open.jpg) no-repeat center/cover;
+}
 
 .bannerimg a {
     width: 100%;
@@ -90,19 +99,21 @@ nav {
     width: 1200px;
     margin: 0 auto;
     display: flex;
+    max-width: 100%;
 }
 .nav_list a{
     color: #eaeaea;
     line-height: 50px;
-    
+    display: block;
+    width: 100%;
 }
 .nav_list li{
-    width: 33%;
+    width: 25%;
     text-align: center;
 }
 .nav_on{
     background-color: #C5161D;
-    font-weight: 600;
+   /* font-weight: 600;*/
     font-size: 18px;
 }
 
@@ -237,3 +248,95 @@ body {
 .buylinks li {
     margin: 0 10px;
 }
+
+/*열린책들 소개페이지*/
+.inbox h2{
+    word-break: keep-all;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.inbox h2 b{
+    background-color: #C5161D;
+    color: #fff;
+    padding: 0 1vw;
+    font-size: 25px;
+    font-weight: 400;
+}
+.inbox h2 em{
+    font-style: normal;
+    color: #C5161D;
+    font-weight: 600;
+}
+
+.openintro1, .openintro2, .openintro3{
+    display: flex;
+    margin-top: 5vh;
+    padding: 0 5vw;
+    word-break: keep-all;
+    line-height: 27px;
+    color: #222;
+}
+.openintro4{
+    margin-top: 5vh;
+    padding: 0 5vw;
+    padding-bottom: 10vh;
+    word-break: keep-all;
+    line-height: 27px;
+    color: #222;
+}
+
+.openintro1 p{
+    padding-top: 80px;
+}
+.openintro1 img{
+    width: 300px;
+    padding-left: 1vw;
+}
+
+/*.openintro1 img::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+}*/
+.openintro2 img{
+    width: 300px;
+    padding-right: 1vw;
+    margin-top: -100px;
+}
+.openintro3 img{
+    width: 300px;
+    padding-left: 1vw;
+    margin-top: -100px;
+}
+.openintro4_img{
+    background: url(../images/intro_open/4.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
