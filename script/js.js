@@ -165,15 +165,16 @@ $(function () {
         $(".box_popup").fadeIn();
         $(".boxpop_left, .boxpop_right").hide();
         $(".world_popup").show().siblings().hide();
-        
+
         /*이미지 순환*/
-        $('.world_popimg').bxSlider({
-        auto: true,
-        autoControls: false,
-        stopAutoOnClick: false,
-        pager: false,
-        slideWidth: 600
-    });
+        var world_tg = $(".world_popimg div");
+        var seq = 0;
+        setInterval(function () {
+            seq++;
+            if (seq === 7) seq = 0;
+            world_tg.eq(seq).addClass("popon").siblings().removeClass("popon");
+        },3000);
+
 
     }); ///////세계문학클릭시//////////
     /*격자무늬 메뉴 호버시 양옆버튼*/
@@ -195,7 +196,7 @@ $(function () {
     }, function () {
         $(this).find("img").attr("src", "images/icons/right_arrow.png");
     }); ///////////오른쪽버튼 호버시/////////////
-    
+
     $(".boxpop_right").click(function () {
         var boxcont = $(".boxpopup_wrap");
         boxcont.stop().animate({
@@ -228,18 +229,18 @@ $(function () {
     $(".boxpop_close").click(function () {
         $(".box_popup").fadeOut();
     });
-/*
-    새로 나온 책 팝업시 화살표액션
-    $(".newpop_right").click(function () {
-        var boxcont = $(".boxpopup_wrap");
-        boxcont.animate({
-            left: "-100%"
-        }, 600, function () {
-            boxcont.append(boxcont.find("div").first()).css({
-                left: "0"
-            });
-        }); /////////애니메이트///////////
-    }); ////////오른쪽버튼클릭////////////////*/
+    /*
+        새로 나온 책 팝업시 화살표액션
+        $(".newpop_right").click(function () {
+            var boxcont = $(".boxpopup_wrap");
+            boxcont.animate({
+                left: "-100%"
+            }, 600, function () {
+                boxcont.append(boxcont.find("div").first()).css({
+                    left: "0"
+                });
+            }); /////////애니메이트///////////
+        }); ////////오른쪽버튼클릭////////////////*/
 
     //왼쪽버튼은 어케할까??
 
@@ -297,7 +298,7 @@ $(function () {
         //console.log(newbook);
 
         $(".newpopup_box").fadeIn();
-        
+
         $(".newpopup_box").find(".newbook").eq(newbook).show().siblings().hide();
     }); //////////새로나온 책사진 클릭시//////////////
 
