@@ -309,12 +309,12 @@ body {
 .openintro2 img{
     width: 300px;
     padding-right: 1vw;
-    margin-top: -100px;
+    margin-top: 0px;
 }
 .openintro3 img{
     width: 300px;
     padding-left: 1vw;
-    margin-top: -100px;
+    margin-top: 0px;
 }
 .openintro4_img{
     background: url(../images/intro_open/4.jpg) no-repeat center/cover;
@@ -323,6 +323,11 @@ body {
     margin-bottom: 3vh;
 }
 
+
+.imghere0, .imghere1, .imghere2{
+    opacity: 0;
+    transition: all 1.4s ease-out;
+}
 
 
 

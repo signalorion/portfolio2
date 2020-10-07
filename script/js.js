@@ -254,7 +254,7 @@ $(function () {
         $(this).find("img").attr("src", "images/icons/bk_left_arrow.png");
 
     }, function () {
-        $(this).find("img").attr("src", "images/icons/left_arrow.png");
+        $(this).find("img").attr("src", "images/icons/left_arrow_red.png");
     }); /////////왼쪽버튼 호버시////////////
 
     /*$(".newpop_left").click(function(){
@@ -266,7 +266,7 @@ $(function () {
         $(this).find("img").attr("src", "images/icons/bk_right_arrow.png");
 
     }, function () {
-        $(this).find("img").attr("src", "images/icons/right_arrow.png");
+        $(this).find("img").attr("src", "images/icons/right_arrow_red.png");
     }); ///////////오른쪽버튼 호버시/////////////
 
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_media.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <!--슬라이더-->
     <title>열린책들</title>
@@ -31,12 +32,12 @@
                 </div>
 
                 <ul class="main_log">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="member.html">회원가입</a></li>
                 </ul>
 
                 <div class="main_search">
-                    <label for="mainfind"><a href="#"><img src="images/icons/magni_red.png" alt="메인검색"></a></label>
+                    <label for="mainfind"><a href="#"><img src="images/icons/magni_red.png" alt="메인검색" onclick="alert('아직 검색기능을 지원하지 않습니다.')"></a></label>
                     <input type="text" id="mainfind">
                 </div>
             </header>
@@ -353,8 +354,8 @@
             </div>
 
             <!--이동버튼-->
-            <div class="newpop_left"><img src="images/icons/left_arrow.png" alt="새로나온책 다음"></div>
-            <div class="newpop_right"><img src="images/icons/right_arrow.png" alt="새로나온책 전"></div>
+            <div class="newpop_left"><img src="images/icons/left_arrow_red.png" alt="새로나온책 다음"></div>
+            <div class="newpop_right"><img src="images/icons/right_arrow_red.png" alt="새로나온책 전"></div>
             <div class="newpop_close">
                 <img src="images/icons/cross_wt.png" alt="새로나온책 팝업 닫기">
             </div>

@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /*열린책들 스타일시트*/
+/*C5161D*/
 
 @import url(../css/common.css);
 
@@ -170,6 +171,7 @@
     position: absolute;
     right: 18px;
 }
+
 
 
 /*****************************************헤더끝*/
@@ -374,6 +376,7 @@
 .main_cont {
     display: flex;
     color: #222;
+    width: 100%;
 }
 
 .main_cont h5 {
@@ -845,6 +848,9 @@ section > a > h6 {
     float: left;
     padding: 2vw;
 }
+.newbookintro_box{
+    height: 100%;
+}
 
 .newbookimg {
     float: left;
@@ -883,7 +889,7 @@ section > a > h6 {
 }
 
 .newintro_full {
-    height: 43vh;
+    height: 70%;
     overflow: auto;
 }
 
@@ -1042,24 +1048,28 @@ section > a > h6 {
     display: flex;
     overflow: auto;
 }
-.ebook_popimg{
+
+.ebook_popimg {
     width: 40%;
 }
 
-.ebook_popimg img{
+.ebook_popimg img {
     width: 100%;
 }
 
-.ebooktit{
+.ebooktit {
     width: 100%;
 }
-.ebooktit div{
+
+.ebooktit div {
     padding-left: 3vw;
 }
-.ebooktit big{
+
+.ebooktit big {
     padding-left: 1vw;
 }
-.ebook_popintro b{
+
+.ebook_popintro b {
     font-size: 25px;
     background-color: #C5161D;
     color: white;
@@ -1068,13 +1078,13 @@ section > a > h6 {
     text-align: center;
 }
 
-.ebook_popintro small{
+.ebook_popintro small {
     font-size: 20px;
     padding: 1vh;
     display: block;
 }
 
-.ebook_popintro p{
+.ebook_popintro p {
     padding-bottom: 3vh;
 }
 
@@ -1085,39 +1095,44 @@ section > a > h6 {
     display: flex;
     overflow: auto;
 }
-.world_popimg{
+
+.world_popimg {
     width: 30%;
     position: relative;
     top: 10%;
 }
 
-.world_popimg_list{
+.world_popimg_list {
     width: 100%;
     position: absolute;
     opacity: 0;
-    transition:all .5s;
+    transition: all .5s;
 }
-.popon{
+
+.popon {
     z-index: 2;
     opacity: 1;
 }
-.world_popimg_list img{
+
+.world_popimg_list img {
     width: 100%;
 }
 
-.worldtit{
+.worldtit {
     width: 77%;
 }
-.world_popintro{
+
+.world_popintro {
     padding-left: 3vw;
 }
-.world_big{
+
+.world_big {
     font-size: 25px;
     width: 90%;
     text-align: center;
 }
 
-.world_big b{
+.world_big b {
     font-size: 25px;
     background-color: #C5161D;
     color: white;
@@ -1125,46 +1140,28 @@ section > a > h6 {
     padding: 0 1vw;
 }
 
-.world_popintro small{
+.world_popintro small {
     font-size: 14px;
     display: block;
     padding: 1vh 0;
-    word-break:keep-all;
+    word-break: keep-all;
     color: #888888;
 }
-.world_sub_tit{
+
+.world_sub_tit {
     padding-top: 3vh;
 }
-.world_sub_tit em{
+
+.world_sub_tit em {
     font-style: normal;
     background-color: #C5161D;
     color: #fff;
-    padding:0 1vw;
+    padding: 0 1vw;
     font-size: 18px;
 }
 
-.world_sub_tit p{
+.world_sub_tit p {
     color: #222;
     font-size: 15px;
     padding-top: 1vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

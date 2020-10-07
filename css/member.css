@@ -5,7 +5,7 @@
 @import url(../css/common.css);
 
 .inbox {
-/*    background-color: #f3f8f3;*/
+    /*    background-color: #f3f8f3;*/
     background-color: #f3f8f3;
     overflow: hidden;
 }
@@ -46,6 +46,7 @@
     font-weight: 400;
     padding-top: 10px;
 }
+
 
 .main_log {
     position: absolute;
@@ -88,22 +89,30 @@
 
 /*****************************************헤더끝*/
 
-/*로그인스타일*/
+/*회원가입스타일*/
 .tit {
     padding: 30px;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
     text-align: center;
     font-size: 30px;
 }
+.member_wrap h4{
+    text-align: right;
+    font-weight: 300;
+    padding-right: 30px;
+    padding-bottom: 2vh;
+    font-size: 14px;
+}
 
-.login_bg {
-    background: url(../images/bg/intro_open.jpg) no-repeat center/cover;
+
+.member_bg {
+    background: url(../images/bg/join.jpg) no-repeat bottom/cover;
     width: 100%;
     height: 35vh;
     position: relative;
 }
 
-.login_bg_tit {
+.member_bg_tit {
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -112,92 +121,58 @@
     font-weight: 300;
 }
 
-.login_wrap {
+.member_wrap {
     width: 900px;
     background-color: #fff;
     margin: 10vh auto;
+    overflow: auto;
 }
 
-#login {
+#join {
     margin: 0 auto;
     width: 100%;
-    height: 35vh;
+    /*height: 35vh;*/
 }
 
-.minput {
-    margin-bottom: 1vh;
-    text-align: center;
+.formframe {
+    width: 70%;
+    /*background-color: red;*/
+    margin: 0 auto;
 }
 
-.minput input {
-    width: 30vw;
-    height: 5vh;
-    border: 0px solid #fff;
-    background-color: #e5e5e5;
+.formframe li {
+    margin: 10px 0;
+}
+
+.formframe label {
     font-size: 15px;
-    color: #f7f7f7;
+    width: 33%;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
     padding-left: 10px;
+    margin-right: 4%;
+    background-color: #ededed;
+    color: #4d4d4d;
 }
 
-/*크롬브라우저에서 포커스 시 진해지지 않게 하기 위해서~*/
-.minput input:focus {
-    outline: none;
-    /*내 스타일 유지~*/
-}
-
-/*로그인버튼 박스*/
-.btnBox {
-    text-align: center;
-
-}
-
-/*로그인버튼*/
-#sbtn {
-    width: 30vw;
-    height: 7vh;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
+input {
+    width: 60%;
+    height: 35px;
+    vertical-align: -1px;
     border: 0;
-    background-color: #222;
-    margin-top: 1vh;
-}
-
-/*기타체크링크박스*/
-.addBox {
-    margin-top: 50px;
-    text-align: center;
-}
-
-/*체크박스영역*/
-.addBox > span {
-    margin: 0 15px;
-    color: #666;
+    border-bottom: 1px solid #e6e6e6;
 
 }
 
-/*체크박스 옆 세로정렬*/
-#chkbox {
-    vertical-align: -4px;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-/*링크셋팅*/
-.addBox > a {
-    margin: 0 15px;
-    color: #222;
-}
-
-.addBox > a:hover {
-    color: #C5161D;
+input[type="submit"]{
+    width: 35%;
+    background-color: #C5161D;
+    color: #fff;
     font-weight: 600;
-}
-
-.login_come {
-    text-align: center;
-    padding-top: 10px;
-    font-weight: 300;
-    color: #5a5a5a;
+    font-size: 16px;
+    height: 55px;
+    line-height: 55px;
+    margin: 5vh auto;
+    display: block;
 }

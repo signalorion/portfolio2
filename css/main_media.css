@@ -1,0 +1,124 @@
+@media only screen and (max-width: 1200px) {
+
+    /*배너 1200미디어쿼리*/
+    .ban_img_box {
+        flex: 2;
+    }
+
+    .ban_txt {
+        padding-right: 0;
+        flex: 2;
+    }
+
+    .ban_txt_li {
+        text-align: center;
+    }
+
+    .ban_bul {
+        margin: 80px auto 0 2vw;
+    }
+
+    .ban_txt_li h3 {
+        font-size: 18px;
+    }
+
+    /*새로나온책*/
+    .newlist li b {
+        font-size: 14px;
+        width: 100%;
+        height: 5vh;
+    }
+
+    
+
+    /*팝업클릭시 화살표위치*/
+    .newpop_right {
+        top: 77%;
+
+    }
+
+    .newpop_left {
+        top: 77%;
+
+    }
+
+    .newbookimg {
+        width: 30vw;
+        height: 80%;
+    }
+
+    /*작가*/
+    .author_list {
+        padding: 0 15px;
+    }
+
+    /*격자무늬*/
+    .boxs_wrap {
+        padding: 0 30px;
+        margin-top: 5vh;
+    }
+
+    /*팝업돌아가는 엑스*/
+    .boxpop_close {
+        top: 8%;
+        right: 5%;
+    }
+
+    .newpop_close {
+        top: 7%;
+        right: 5%;
+    }
+
+
+    /*격자무늬 클릭시 박스크기*/
+    .newpopup_fix {
+        width: 90vw;
+        height: 65vh;
+    }
+
+    .box_fix {
+        width: 90vw;
+        height: 60vh;
+    }
+}
+
+/*메인 1200픽셀 미디어쿼리*/
+
+@media only screen and (max-width: 1024px) {
+
+    /*로고조금 조정*/
+    .toplogo img {
+        transform: scale(0.9);
+    }
+
+    .logotxt {
+        padding-left: 0px;
+    }
+
+    .logotxt h1 {
+        padding-top: 5px;
+    }
+
+    .logotxt h2 {
+        padding-top: 0px;
+    }
+
+    /*배너*/
+    .banner {
+        height: 30vh;
+    }
+    .ban_bul {
+        margin: 40px auto 0 2vw;
+    }
+
+    .bestseller {
+        height: 30vh;
+    }
+
+    /*메인컨트*/
+    .main_cont {
+        padding-top: 2vh;
+    }
+}
+
+/*메인 1024픽셀 미디어쿼리*/
