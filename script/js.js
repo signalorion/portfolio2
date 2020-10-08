@@ -76,7 +76,7 @@ $(function () {
     var banimg = $(".ban_img_box div");
     var banbul = $(".ban_bul li")
     var seq = 0;
-    setInterval(function () {
+   /* setInterval(function () {
         seq++;
         if (seq === 5) seq = 0;
 
@@ -84,7 +84,7 @@ $(function () {
         banimg.eq(seq).addClass("active").siblings().removeClass("active");
 
         banbul.eq(seq).addClass("on").siblings().removeClass("on");
-    }, 4000);
+    }, 4000);*/
 
     /*블릿 누르면 이동하기*/
     $(".ban_bul li").click(function () {
@@ -175,8 +175,8 @@ $(function () {
             world_tg.eq(seq).addClass("popon").siblings().removeClass("popon");
         },3000);
 
-
     }); ///////세계문학클릭시//////////
+    
     /*격자무늬 메뉴 호버시 양옆버튼*/
     $(".boxpop_left").hover(function () {
         $(this).find("img").attr("src", "images/icons/bk_left_arrow.png");
@@ -309,7 +309,7 @@ $(function () {
         //console.log(recommnum);
 
         $(".editer_recomm").animate({
-            height: "100vh"
+            height: "70vh"
         }, 600, function () {
             $(".editer_recomm").css({
                 height: "auto"

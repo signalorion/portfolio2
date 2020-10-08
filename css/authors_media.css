@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1200px) {
+
+    /*타이틀*/
+    .bstit {
+        height: 17vh;
+    }
+
+    .bstit::after {
+        top: 12vh;
+    }
+
+    /*작가사진*/
+    .auth_imgbox {
+        width: 45vw;
+    }
+
+    .auth_name,
+    .auth_txt {
+        width: 30vw;
+    }
+    
+    /*다음작가*/
+    .next_author {
+    margin: 6vh 0 0 auto;
+}
+
+}
+
+/*작가들 1200픽셀 미디어쿼리*/

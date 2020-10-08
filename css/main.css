@@ -264,7 +264,11 @@
 .ban_bul {
     display: flex;
     width: 140px;
-    margin: 80px auto 0 22vw;
+    /*margin: 80px auto 0 22vw;*/
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     justify-content: center;
 }
 
@@ -350,7 +354,7 @@
 
 .best_txt {
     flex: 1.5;
-    padding-top: 5vh;
+    padding-top: 3vw;
     padding-right: 3vh;
 }
 
@@ -362,6 +366,9 @@
 .best_txt_li h3 {
     font-size: 20px;
     line-height: 60px;
+}
+.bext_txt_writer{
+    font-size: 1.6vw;
 }
 
 .best_txt_li a {
@@ -1045,6 +1052,7 @@ section > a > h6 {
 .thisboxpopup.ebook_popup {
     display: none;
     width: 100%;
+    height: auto;
     display: flex;
     overflow: auto;
 }
@@ -1092,6 +1100,7 @@ section > a > h6 {
 .thisboxpopup.world_popup {
     display: none;
     width: 100%;
+    height: auto;
     display: flex;
     overflow: auto;
 }

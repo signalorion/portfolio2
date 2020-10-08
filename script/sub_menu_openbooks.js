@@ -31,3 +31,27 @@
             
         });///////scroll//////////////////
         //////////////////////////////////////////////
+
+//근데 저 스크롤효과가 모바일환경에서는 안되게 해야함...안먹히니까
+var winwid = window.outerWidth;
+console.log(winwid);
+
+$(function(){
+    console.log("로딩완료");
+    
+    if(winwid<=1200){
+    $(".imghere0").stop().css({
+                    opacity:"1"
+                });
+        $(".imghere1").stop().css({
+                    opacity:"1",
+            marginTop: "-100px"
+                });
+         $(".imghere2").stop().css({
+                    opacity:"1",
+             marginTop: "-100px"
+                });
+}
+});////////////////제이쿼리로딩영역///////////
+//////////////////////////////////////////////
+

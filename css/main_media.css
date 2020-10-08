@@ -8,6 +8,7 @@
     .ban_txt {
         padding-right: 0;
         flex: 2;
+        padding-top: 8vw;
     }
 
     .ban_txt_li {
@@ -15,12 +16,13 @@
     }
 
     .ban_bul {
-        margin: 80px auto 0 2vw;
+        left: 20%;
     }
 
     .ban_txt_li h3 {
-        font-size: 18px;
+        font-size: 2vw;
     }
+
 
     /*새로나온책*/
     .newlist li b {
@@ -29,7 +31,11 @@
         height: 5vh;
     }
 
-    
+    .newlist li p {
+        font-size: 14px;
+    }
+
+
 
     /*팝업클릭시 화살표위치*/
     .newpop_right {
@@ -105,20 +111,253 @@
 
     /*배너*/
     .banner {
-        height: 30vh;
+        height: 40vw;
     }
+
     .ban_bul {
-        margin: 40px auto 0 2vw;
+        /*margin: 17vw auto 0 2vw;*/
     }
 
     .bestseller {
-        height: 30vh;
+        height: 40vw;
+    }
+
+    .main_wrap {
+        height: auto;
+    }
+
+    /*베스트셀러*/
+    .best_txt_li h3 {
+        font-size: 2.5vw;
+        line-height: 50px;
     }
 
     /*메인컨트*/
     .main_cont {
         padding-top: 2vh;
     }
+
+    /*팝업돌아가는 엑스*/
+    .newpop_close {
+        top: 10%;
+    }
+
+    .boxpop_close {
+        top: 13%;
+    }
+
+    /*격자무늬*/
+    .collect {
+        height: 30vh;
+    }
+
+    .ebook {
+        height: 25vh;
+    }
+
+    .event_box {
+        height: 40vh;
+    }
+
+    .world {
+        height: 23vh;
+    }
+
+    .openbooksintro {
+        height: 25vh;
+    }
+
+    /*편집자 추천도서*/
+    .editer_recomm {
+        height: 32vw;
+        margin: 7vh 0 14vh 0;
+    }
+
+    .recomm_show {
+        height: 25vh;
+    }
+
+    /*다음페이지넘어가기*/
+    .nextsite {
+        bottom: 23vh;
+    }
+
+    /*푸터*/
+    .footerlogo {
+        margin-left: 3vw;
+    }
+
 }
 
 /*메인 1024픽셀 미디어쿼리*/
+
+@media only screen and (max-width: 850px) {
+
+    /*검색창*/
+    .main_search {
+        width: 33%;
+        right: -67%;
+    }
+
+    .footercenter {
+        flex: 4;
+    }
+
+    .newlist {
+        padding: 20px 20px;
+    }
+
+    .newlist li b {
+        font-size: 13px;
+    }
+
+    .author_list {
+        padding: 0 15px 0 0;
+    }
+
+    .main_cont h5 {
+        font-size: 5vw;
+    }
+
+    /*새로나온책클릭시*/
+    .newbook b {
+        font-size: 22px;
+    }
+
+    /*격자무늬팝업*/
+    .sechover {
+        font-size: 16px;
+    }
+
+    .world_big {
+        font-size: 20px;
+    }
+
+    /*편집자추천도서*/
+    .recomm b {
+        font-size: 14px;
+        height: 5vh;
+    }
+
+    .recomm p {
+        font-size: 14px;
+    }
+
+    .hidden_intro p {
+        line-height: 28px;
+    }
+
+    .hidden_intro big {
+        font-size: 23px;
+        padding-bottom: 13px;
+    }
+
+    .hidden_intro .hidden_writer {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .hidden_intro p {
+        line-height: 28px;
+    }
+
+    /*푸터*/
+    .footercenter {
+        flex: 5;
+        padding: 3vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 1vw;
+    }
+
+    .footerlogo {
+        margin-left: 0vw;
+    }
+
+    .footerinfo a {
+        font-size: 14px;
+    }
+
+}
+
+/*메인 850픽셀 미디어쿼리*/
+
+@media only screen and (max-width: 700px) {
+    /*여기부터 모바일버전*/
+
+
+    .mobiledn {
+        display: none;
+    }
+
+    /*헤더*/
+    .top {
+        height: 20vw;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .main_search {
+        width: 55%;
+        left: 50%;
+        top: 0vw;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    #mainfind {
+        height: 50px;
+        border: 0;
+        border-bottom: 4px solid #C5161D;
+        padding-left: 10px;
+    }
+
+    .toplogo a {
+        justify-content: center;
+    }
+
+    /*배너*/
+    .main_wrap {
+        height: 140vw;
+        position: relative;
+        padding-top: 70vw;
+    }
+    .bestseller {
+    height: 70vw;
+        width: 100%;
+}
+    .bestseller h4 {
+    text-align: center;
+}
+    .best_wrap {
+        background-color: #fff;
+    height: 100%;
+    padding: 25px;
+}
+    
+    .banner {
+    width: 100%;
+    background-color: #C5161D;
+    display: flex;
+    height: 70vw;
+    top: 20vw;
+    position: absolute;
+}
+    .ban_txt {
+     padding-top: 10vw; 
+}
+
+    /*격자무늬*/
+    section > a > h6 {
+        font-size: 20px;
+    }
+
+    .event_box h6 {
+        font-size: 20px;
+    }
+
+
+}
+
+/*메인 700픽셀 미디어쿼리*/
