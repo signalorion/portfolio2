@@ -211,6 +211,10 @@
         font-size: 13px;
     }
 
+    .bext_txt_writer {
+        font-size: 1.7vw;
+    }
+
     .author_list {
         padding: 0 15px 0 0;
     }
@@ -227,6 +231,14 @@
     /*격자무늬팝업*/
     .sechover {
         font-size: 16px;
+    }
+
+    section > a > h6 {
+        font-size: 3vw;
+    }
+
+    .event_box h6 {
+        font-size: 3vw;
     }
 
     .world_big {
@@ -293,9 +305,11 @@
 
     /*헤더*/
     .top {
-        height: 20vw;
+        height: 120px;
         padding: 0;
         margin-bottom: 0;
+        display: flex;
+    flex-wrap: wrap;
     }
 
     .main_search {
@@ -313,39 +327,92 @@
         padding-left: 10px;
     }
 
+    .toplogo {
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .toplogo a {
         justify-content: center;
     }
 
+    .logotxt {
+        padding-left: 0px;
+        padding-top: 0;
+    }
+
     /*배너*/
     .main_wrap {
-        height: 140vw;
+        height: 150vw;
         position: relative;
         padding-top: 70vw;
     }
+
     .bestseller {
-    height: 70vw;
+        height: 70vw;
         width: 100%;
-}
+        padding: 0 3vw;
+    }
+
     .bestseller h4 {
-    text-align: center;
-}
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        padding-left: 0;
+    }
+
     .best_wrap {
         background-color: #fff;
-    height: 100%;
-    padding: 25px;
-}
-    
+        padding: 25px;
+    }
+
     .banner {
-    width: 100%;
-    background-color: #C5161D;
-    display: flex;
-    height: 70vw;
-    top: 20vw;
-    position: absolute;
-}
+        width: 100%;
+        background-color: #C5161D;
+        display: block;
+        height: 70vw;
+        top: 120px;
+        position: absolute;
+    }
+
     .ban_txt {
-     padding-top: 10vw; 
+        padding-top: 10vw;
+    }
+    .ban_bul {
+     left: 50%; 
+}
+    /*메인*/
+    .main_cont {
+    padding-top: 0vh;
+        display: block;
+}
+    .main_cont .new {
+position: static;
+}
+    .newlist {
+     padding:0; 
+        padding-left: 20px;
+        width: 150%;
+}
+    .main_cont h5 {
+        display: inline-block;
+        line-height: 3;
+    font-size: 10vw;
+}
+    .maincont_p {
+        display: inline-block;
+        font-size: 5vw;
+        color: #C5161D;
+        font-weight: 500;
+}
+    .newlist li b {
+    font-size: 3vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+        padding: 7px;
 }
 
     /*격자무늬*/
