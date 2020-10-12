@@ -319,6 +319,20 @@ $(function () {
         $(".recomm_hidden").empty().append('<img src="images/books/recomm' + (recommnum + 1) + '.jpg"><div class="hidden_intro"><big>' + recomm_big[recommnum] + '</big><b class="hidden_writer">저자 <span>' + recomm_writer[recommnum] + '</span></b><p><b>' + recomm_b[recommnum] + '</b>' + recomm_p[recommnum] + '</p></div>')
     });
 
+    
+    /*모바일에서*/
+    
+    $(".mobileham a").click(function(){
+        $(".m_sidemenu").animate({
+            width:"100vw"
+        },400);
+    });
+    
+    $(".m_side_x").click(function(){
+        $(".m_sidemenu").animate({
+            width:"0"
+        },400);
+    });
 
 }); /////////////제이쿼리블록//////////////
 /////////////////////////////////////////////////

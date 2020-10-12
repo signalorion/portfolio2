@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1200px) {
+    /*C5161D*/
 
     /*배너 1200미디어쿼리*/
     .ban_img_box {
@@ -157,6 +158,7 @@
 
     .event_box {
         height: 40vh;
+        margin: 12vw 0px;
     }
 
     .world {
@@ -298,9 +300,16 @@
 @media only screen and (max-width: 700px) {
     /*여기부터 모바일버전*/
 
+    .mobiledb {
+        display: block;
+    }
 
     .mobiledn {
         display: none;
+    }
+
+    .mobilebr {
+        display: block;
     }
 
     /*헤더*/
@@ -309,8 +318,94 @@
         padding: 0;
         margin-bottom: 0;
         display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
+
+    .mobileham {
+        width: 10vw;
+        height: 10vw;
+        min-width: 50px;
+        min-height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #C5161D;
+        position: absolute;
+        top: 2vw;
+        left: 2vh;
+    }
+
+    .mobileham a {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .mobileham a img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 4vw;
+        min-width: 22px;
+    }
+
+    .m_sidemenu {
+        width: 0vw;
+        height: 100vh;
+        background-color: #C5161D;
+        position: fixed;
+        z-index: 777;
+        overflow: hidden;
+    }
+
+    .m_side_x {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .m_side_x {
+        transform: scale(0.7);
+    }
+
+    .m_side_list {
+        line-height: 2.5;
+        margin-top: 20vw;
+        white-space: nowrap;
+    }
+
+    .m_side_list a {
+        color: #fff;
+        font-size: 10vw;
+    }
+
+    .m_nextsite {
+        width: 100%;
+        height: 25vw;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        padding: 2vw;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .m_nextsite p {
+        color: #999;
+        line-height: 10vw;
+
+    }
+
+    .nextsite_go {
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+
 
     .main_search {
         width: 55%;
@@ -345,13 +440,13 @@
 
     /*배너*/
     .main_wrap {
-        height: 150vw;
+        height: auto;
         position: relative;
-        padding-top: 70vw;
+        padding-top: 116vw;
     }
 
     .bestseller {
-        height: 70vw;
+        height: auto;
         width: 100%;
         padding: 0 3vw;
     }
@@ -361,69 +456,291 @@
         padding-top: 5vw;
         padding-bottom: 5vw;
         padding-left: 0;
+        font-size: 6vw;
+    }
+
+    .best_txt_li h3 {
+        font-size: 5vw;
+        line-height: 2.5;
     }
 
     .best_wrap {
         background-color: #fff;
-        padding: 25px;
+        display: block;
     }
+
+    .m_best_img {
+        text-align: center;
+        height: auto;
+    }
+
+    .m_best_img img {
+        width: 40vw;
+        height: auto;
+    }
+
+    .best_txt {
+        padding-top: 0vw;
+        padding-right: 0vh;
+    }
+
+    .bext_txt_writer {
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .bext_txt_writer span{
+        font-weight: normal;
+    }
+
+    .best_txt_li {
+        text-align: center;
+    }
+
+    /*배너*/
 
     .banner {
         width: 100%;
         background-color: #C5161D;
         display: block;
-        height: 70vw;
+        height: 110vw;
         top: 120px;
         position: absolute;
     }
 
     .ban_txt {
-        padding-top: 10vw;
+        padding-top: 0vw;
     }
+
     .ban_bul {
-     left: 50%; 
-}
+        left: 50%;
+    }
+
     /*메인*/
     .main_cont {
-    padding-top: 0vh;
+        padding-top: 0vh;
         display: block;
-}
+    }
+
     .main_cont .new {
-position: static;
-}
+        position: static;
+    }
+
+
     .newlist {
-     padding:0; 
+        padding: 0;
         padding-left: 20px;
         width: 150%;
-}
+    }
+
     .main_cont h5 {
         display: inline-block;
         line-height: 3;
-    font-size: 10vw;
-}
+        font-size: 10vw;
+    }
+
     .maincont_p {
         display: inline-block;
         font-size: 5vw;
         color: #C5161D;
         font-weight: 500;
-}
+    }
+
     .newlist li b {
-    font-size: 3vw;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+        font-size: 3vw;
+        /*        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;*/
         padding: 7px;
-}
+        height: 12vw;
+    }
+
+    .newlist li p {
+        font-size: 2.7vw;
+    }
+
+    /*새로나온책 팝업*/
+    .newbookimg {
+        width: 100%;
+        height: 80%;
+    }
+
+    .newbook b {
+        font-size: 20px;
+    }
+
+    .newbookintro_box {
+        text-align: center;
+    }
+
+    .newintro_full {
+        display: none;
+    }
+
+    .newpop_left {
+        top: 50vh;
+    }
+
+    .newpop_right {
+        top: 50vh;
+    }
+
+    /*작가*/
+    .main_cont .author {
+        height: 100vw;
+    }
+
+    .author_list {
+        padding: 0 5vw;
+    }
 
     /*격자무늬*/
+    .boxs_wrap {
+        padding: 0 0px;
+        margin-top: 5vh;
+    }
+
     section > a > h6 {
         font-size: 20px;
     }
 
     .event_box h6 {
         font-size: 20px;
+        display: none;
     }
 
+    .cbox1,
+    .cbox3 {
+        display: none;
+    }
+
+    .boxs_wrap > div {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    /*편집자 추천도서*/
+    .editer_recomm {
+        height: auto;
+        margin: 0vh 0 5vh 0;
+        background-color: transparent;
+    }
+
+    .editer_recomm h6 {
+        display: none;
+    }
+
+    .editerh6 {
+        text-align: center;
+        position: relative;
+        padding-bottom: 5vw;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    .editerh6::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        height: 2px;
+        background-color: #C5161D;
+    }
+
+    .recomm_show {
+        height: auto;
+        padding: 0px 8vw;
+    }
+
+    .recomm {
+        display: flex;
+        padding-top: 7vw;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .recomm b {
+        font-size: 4vw;
+        height: 10vw;
+    }
+
+    .recomm p {
+        font-size: 4vw;
+    }
+
+    .recomm_li {
+        width: 45%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    .recomm_li:nth-child(2n) {
+        margin-right: 0%;
+    }
+
+    /*다음사이트*/
+    .nextsite {
+        display: none;
+    }
+
+    /*푸터*/
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        display: block;
+    }
+
+    .footerinfo {
+        display: block;
+        padding: 0 5vw;
+    }
+
+    .footerline {
+        display: none;
+    }
+
+    .footerlogo {
+        display: none;
+    }
+
+    .footercenter {
+        padding: 0;
+        padding-left: 0vw;
+    }
+
+    .m_snslinks {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 5vw 0;
+    }
+
+    .m_snslinks li {
+        float: left;
+        width: 33%;
+        text-align: center;
+    }
+
+    .m_snslinks li img {
+        width: 10vw;
+        min-width: 35px;
+    }
+
+    .snslinks {
+        display: none;
+    }
+
+    .footerinfo a {
+        font-size: 14px;
+        line-height: 3;
+    }
+
+    address {
+        padding: 5vw;
+    }
 
 }
 

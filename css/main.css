@@ -5,6 +5,15 @@
 
 @import url(../css/common.css);
 
+.mobiledb, .m_sidemenu, .mobileham {
+    display: none;
+}
+.m_best_img{
+    display: none;
+}
+
+
+
 .inbox {
     background-color: #f3f8f3;
     overflow: hidden;
@@ -343,6 +352,7 @@
     display: block;
 }
 
+
 .best_img {
     flex: 1;
 }
@@ -367,7 +377,8 @@
     font-size: 20px;
     line-height: 60px;
 }
-.bext_txt_writer{
+
+.bext_txt_writer {
     font-size: 17px;
 }
 
@@ -855,7 +866,8 @@ section > a > h6 {
     float: left;
     padding: 2vw;
 }
-.newbookintro_box{
+
+.newbookintro_box {
     height: 100%;
 }
 

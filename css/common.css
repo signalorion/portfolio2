@@ -90,6 +90,8 @@ body {
 }
 
 /*푸터***************************************************/
+.m_snslinks{display: none;}
+
 footer {
     width: 100%;
     height: 18vh;
