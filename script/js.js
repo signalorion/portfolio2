@@ -60,6 +60,8 @@ var recomm_p = [
     "이 책은 단순한 생각에서 출발한다. 오늘날의 경제가 부유한 사람들에게 더 유리한 방식으로 굴러가고 많은 문제들이 이로부터 생겨나는 것이라면, 우리는 모든 사람들에게 더 이로운 쪽으로 경제의 규칙을 다시 고쳐 써야 한다는 것이다. 그래서 오늘날 우리 경제에서 무엇이 잘못되어 있고, 그것을 어떻게 고쳐야 하는지 설명하는 것을 목적으로 하는 이 책은 먼저 경제 현실을 지배하고 있는 현재의 규칙이 어떻게 만들어지고 어떻게 작동하고 있는지를 고찰한 다음, 곧이어 이를 대체할 새로운 규칙을 제시한다.<br>스티글리츠는 불평등을 만들어 내는 오늘날의 경제 구조를 빙산에 빗대 설명한다. 빙산에서 눈에 보이는 부분은 말 그대로 빙산의 일각일 뿐, 수면 아래에는 거대한 구조물이 자리하고 있다는 것이다. 그러나 사람들의 시야에 들어오는 것은 빙산의 일각이다. 빙산의 맨 꼭대기에 생계비를 벌기에는 불충분한 일자리와 불충분한 복지, 불안한 미래 등 우리가 일상적으로 경험하는 불평등한 현실이 보인다. 정치인들은 이 부분을 가장 중요하게 생각한다. 눈에 보이기 때문이고, 유권자들의 관심도 여기에 머물러 때문이다. 그러나 이러한 현상을 일으키는 동인들은 수면 아래 자리하고 있다. 기업 거버넌스, 세제 구조, 국제 무역 및 금융 협정, 거시 경제 정책, 노동법과 노동 시장, 구조적인 차별 등 경제의 틀을 형성하는 규칙들이 수면 아래 감추어진 채 사람들의 시선에 들어오지 않는다. 그러나 정말 중요한 것은 바로 이것이다. 이 감추어져 있는 것들이 바뀌지 않는 한, 현실에서 실제로 일어나는 변화들은 변화랄 것도 없이 아주 미미할 뿐이다. 스티글리츠는 수면 아래서 겉으로 드러나는 현상을 일으키는 이러한 동인들에 집중하며 이를 경제 규칙이라 명명한다. 수면 아래의 빙산이 배를 침몰시키듯이, 중산층을 침몰시키고 있는 것은 바로 이러한 빙산의 중간 구조물, 즉 규칙이다. 이 같은 규칙들로 이루어진 경제 구조 속에서 누군가는 승자가 되고 누군가는 패자가 된다. "
 ]
 
+var mobile_w = window.outerWidth;
+console.log(mobile_w);
 
 $(function () {
 
@@ -76,15 +78,17 @@ $(function () {
     var banimg = $(".ban_img_box div");
     var banbul = $(".ban_bul li")
     var seq = 0;
-   /* setInterval(function () {
-        seq++;
-        if (seq === 5) seq = 0;
+     setInterval(function () {
+         seq++;
+         if (seq === 5) seq = 0;
 
-        $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[seq] + '</a></h3></li><li><a href="#">' + banwriter[seq] + '<span>' + bantrans[seq] + '</span></a></li>');
-        banimg.eq(seq).addClass("active").siblings().removeClass("active");
+         $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[seq] + '</a></h3></li><li><a href="#">' + banwriter[seq] + '<span>' + bantrans[seq] + '</span></a></li>');
+         banimg.eq(seq).addClass("active").siblings().removeClass("active");
 
-        banbul.eq(seq).addClass("on").siblings().removeClass("on");
-    }, 4000);*/
+         banbul.eq(seq).addClass("on").siblings().removeClass("on");
+     }, 4000);
+    
+
 
     /*블릿 누르면 이동하기*/
     $(".ban_bul li").click(function () {
@@ -173,10 +177,10 @@ $(function () {
             seq++;
             if (seq === 7) seq = 0;
             world_tg.eq(seq).addClass("popon").siblings().removeClass("popon");
-        },3000);
+        }, 3000);
 
     }); ///////세계문학클릭시//////////
-    
+
     /*격자무늬 메뉴 호버시 양옆버튼*/
     $(".boxpop_left").hover(function () {
         $(this).find("img").attr("src", "images/icons/bk_left_arrow.png");
@@ -319,20 +323,24 @@ $(function () {
         $(".recomm_hidden").empty().append('<img src="images/books/recomm' + (recommnum + 1) + '.jpg"><div class="hidden_intro"><big>' + recomm_big[recommnum] + '</big><b class="hidden_writer">저자 <span>' + recomm_writer[recommnum] + '</span></b><p><b>' + recomm_b[recommnum] + '</b>' + recomm_p[recommnum] + '</p></div>')
     });
 
-    
+
     /*모바일에서*/
-    
-    $(".mobileham a").click(function(){
+
+    $(".mobileham a").click(function () {
         $(".m_sidemenu").animate({
-            width:"100vw"
-        },400);
+            width: "100vw"
+        }, 400);
     });
-    
-    $(".m_side_x").click(function(){
+
+    $(".m_side_x").click(function () {
         $(".m_sidemenu").animate({
-            width:"0"
-        },400);
+            width: "0"
+        }, 400);
     });
+
+    /*if (mobile_w > 700) {
+        $(".banner").find("div").eq(0).hide();
+    }*/
 
 }); /////////////제이쿼리블록//////////////
 /////////////////////////////////////////////////

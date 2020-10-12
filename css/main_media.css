@@ -171,12 +171,12 @@
 
     /*편집자 추천도서*/
     .editer_recomm {
-        height: 32vw;
+        height: 33vw;
         margin: 7vh 0 14vh 0;
     }
 
     .recomm_show {
-        height: 25vh;
+        height: 30vw;
     }
 
     /*다음페이지넘어가기*/
@@ -371,7 +371,7 @@
     }
 
     .m_side_list {
-        line-height: 2.5;
+        line-height: 2;
         margin-top: 20vw;
         white-space: nowrap;
     }
@@ -488,7 +488,8 @@
         font-size: 4vw;
         font-weight: bold;
     }
-    .bext_txt_writer span{
+
+    .bext_txt_writer span {
         font-weight: normal;
     }
 
@@ -507,12 +508,51 @@
         position: absolute;
     }
 
+    .m_ban_img_box {
+        height: 69vw;
+        width: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5vw;
+    }
+
+    .m_ban_img_box {
+        position: relative;
+    }
+
+    .m_ban_img_box div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: all .9s;
+    }
+
+    .m_ban_img_box .active {
+        display: block;
+        z-index: 4;
+        opacity: 1;
+    }
+
+
     .ban_txt {
-        padding-top: 0vw;
+        padding: 7vw 0;
+    }
+
+    .ban_txt_li h3 {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    .ban_txt_li li {
+        line-height: 2;
+        font-size: 4vw;
     }
 
     .ban_bul {
         left: 50%;
+        bottom: 2vw;
     }
 
     /*메인*/
@@ -734,7 +774,7 @@
     }
 
     .footerinfo a {
-        font-size: 14px;
+        font-size: 4vw;
         line-height: 3;
     }
 
