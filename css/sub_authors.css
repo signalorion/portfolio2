@@ -29,6 +29,7 @@
     font-size: 16px;
     font-weight: 400;
     color: #717171;
+    padding-bottom: 10px;
 }
 
 .bstit::after {
@@ -38,7 +39,7 @@
     width: 100%;
     height: 5px;
     background-color: #C5161D;
-    top: 15vh;
+    /*top: 15vh;*/
     left: 50%;
     transform: translateX(-50%);
 }
@@ -105,6 +106,7 @@ nav {
 .authornav {
     display: flex;
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding-bottom: 5vh;
 }

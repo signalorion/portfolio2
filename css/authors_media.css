@@ -1,13 +1,12 @@
 @media only screen and (max-width: 1200px) {
+    /*작가페이지 미디어쿼리*/
 
     /*타이틀*/
     .bstit {
         height: 17vh;
+        width: 60%;
     }
 
-    .bstit::after {
-        top: 12vh;
-    }
 
     /*작가사진*/
     .auth_imgbox {
@@ -17,13 +16,180 @@
     .auth_name,
     .auth_txt {
         width: 30vw;
+        font-size: 3vw;
     }
-    
+
     /*다음작가*/
     .next_author {
-    margin: 6vh 0 0 auto;
-}
+        margin: 6vh 0 0 auto;
+    }
 
 }
 
 /*작가들 1200픽셀 미디어쿼리*/
+
+@media only screen and (max-width: 1024px) {
+
+    /*푸터*/
+    .footerlogo {
+        margin-left: 3vw;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+
+    /*푸터*/
+    .footercenter {
+        flex: 5;
+        padding: 3vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 1vw;
+    }
+    .footerlogo img {
+    width: 20vw;
+}
+
+    .footerlogo {
+        margin-left: 0vw;
+    }
+
+    .footerinfo a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    /*여기부터 모바일*/
+    .mobiledb {
+        display: block;
+    }
+
+    .mobiledn {
+        display: none;
+    }
+
+    .mobilebr {
+        display: block;
+    }
+
+
+    .nav_list a {
+        font-size: 3vw;
+    }
+
+
+    .bannerlogo img {
+        width: 50px;
+    }
+
+    .bstit {
+        width: 80%;
+        font-size: 6vw;
+    }
+
+    .bstit small {
+        font-size: 4vw;
+    }
+
+    .authornav {
+        margin-top: 3vw;
+        flex-wrap: wrap;
+    }
+
+    .authornav li {
+        width: 50%;
+        flex: none;
+    }
+
+    .auth_imgbox {
+        width: 60vw;
+    }
+
+    .auth_txt {
+        right: 0%;
+        font-size: 4vw;
+    }
+
+    .auth_name {
+        left: 0%;
+        line-height: normal;
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*다음작가가기*/
+    .next_author {
+        width: 44vw;
+    margin: 6vh 0 0 auto;
+}
+    
+    .next_author img {
+     margin-left: 0px; 
+}
+            /*푸터*/
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        display: block;
+    }
+
+    .footerinfo {
+        display: block;
+        padding: 0 5vw;
+    }
+
+    .footerline {
+        display: none;
+    }
+
+    .footerlogo {
+        display: none;
+    }
+
+    .footercenter {
+        padding: 0;
+        padding-left: 0vw;
+    }
+
+    .m_snslinks {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 5vw 0;
+    }
+
+    .m_snslinks li {
+        float: left;
+        width: 33%;
+        text-align: center;
+    }
+
+    .m_snslinks li img {
+        width: 10vw;
+        min-width: 35px;
+    }
+
+    .snslinks {
+        display: none;
+    }
+
+    .footerinfo a {
+        font-size: 4vw;
+        line-height: 3;
+    }
+
+    address {
+        padding: 5vw;
+    }
+
+}
+
+/*700*/

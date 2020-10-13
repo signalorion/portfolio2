@@ -201,10 +201,6 @@
         right: -67%;
     }
 
-    .footercenter {
-        flex: 4;
-    }
-
     .newlist {
         padding: 20px 20px;
     }
@@ -284,6 +280,9 @@
         justify-content: space-between;
         padding-left: 1vw;
     }
+    .footerlogo img {
+    width: 20vw;
+}
 
     .footerlogo {
         margin-left: 0vw;
@@ -363,10 +362,8 @@
     .m_side_x {
         position: absolute;
         top: 0;
-        right: 0;
-    }
-
-    .m_side_x {
+        right: 2vw;
+        z-index: 999;
         transform: scale(0.7);
     }
 
@@ -374,11 +371,25 @@
         line-height: 2;
         margin-top: 20vw;
         white-space: nowrap;
+        width: 100%;
+    }
+
+    .m_side_list li {
+        width: 100vw;
     }
 
     .m_side_list a {
         color: #fff;
         font-size: 10vw;
+        width: 100vw;
+    }
+
+    .m_side_list li:hover {
+        background-color: #fff;
+    }
+
+    .m_side_list li:hover a {
+        color: #222;
     }
 
     .m_nextsite {
@@ -397,6 +408,35 @@
         line-height: 10vw;
 
     }
+    .m_member{
+        position: absolute;
+        top: 3vw;
+        white-space: nowrap;
+        position: relative;
+    }
+    .m_member::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+        
+    }
+    
+    
+    .m_member li{
+        margin-bottom: 3vw;
+        width: 20vw;
+        margin-left: 2vw;
+    }
+    
+    
+    .m_member a{
+        color: #f0f0f0;
+        font-size: 5vw;
+    }
+
 
     .nextsite_go {
         color: #fff;
@@ -461,7 +501,7 @@
 
     .best_txt_li h3 {
         font-size: 5vw;
-        line-height: 2.5;
+        line-height: 2.3;
     }
 
     .best_wrap {
@@ -718,6 +758,21 @@
 
     .recomm_li:nth-child(2n) {
         margin-right: 0%;
+    }
+
+    .recomm_hidden {
+        text-align: center;
+    }
+
+    .hidden_intro {
+        width: 100%;
+        text-align: left;
+    }
+
+    .recomm_hidden img {
+        width: 40vmin;
+        float: none;
+        margin-right: 0vmin;
     }
 
     /*다음사이트*/

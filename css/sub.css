@@ -8,8 +8,12 @@
 .inbox {
     background-color: #f3f8f3;
     padding: 0 25px;
-    
-    
+}
+
+.m_openintro_img1,
+.m_openintro_img2,
+.m_openintro_img3 {
+    display: none;
 }
 
 
@@ -21,7 +25,8 @@
     padding-top: 6vh;
     margin: 0 auto;
 }
-.bstit.opntit{
+
+.bstit.opntit {
     height: 18vh;
 }
 
@@ -33,8 +38,10 @@
     font-size: 16px;
     font-weight: 400;
     color: #717171;
+    padding-bottom: 10px;
 }
-.bstit.opntit::after{
+
+.bstit.opntit::after {
     top: 12vh;
 }
 
@@ -45,7 +52,7 @@
     width: 100%;
     height: 5px;
     background-color: #C5161D;
-    top: 15vh;
+    /*top: 15vw;*/
     left: 50%;
     transform: translateX(-50%);
 }
@@ -63,14 +70,17 @@
     margin: 0 auto;
     position: relative;
 }
-.bestbanner{
+
+.bestbanner {
     background: url(../images/bg/bestseller.jpg) no-repeat center/cover;
-    
+
 }
-.newbanner{
+
+.newbanner {
     background: url(../images/bg/newbook.png) no-repeat 100% 30%/cover;
 }
-.openbanner{
+
+.openbanner {
     background: url(../images/bg/intro_open.jpg) no-repeat center/cover;
 }
 
@@ -95,25 +105,29 @@ nav {
     height: 50px;
     background-color: #2E2E2E;
 }
-.nav_list{
+
+.nav_list {
     width: 1200px;
     margin: 0 auto;
     display: flex;
     max-width: 100%;
 }
-.nav_list a{
+
+.nav_list a {
     color: #eaeaea;
     line-height: 50px;
     display: block;
     width: 100%;
 }
-.nav_list li{
+
+.nav_list li {
     width: 25%;
     text-align: center;
 }
-.nav_on{
+
+.nav_on {
     background-color: #C5161D;
-   /* font-weight: 600;*/
+    /* font-weight: 600;*/
     font-size: 18px;
 }
 
@@ -128,7 +142,10 @@ nav {
     width: 30%;
 
 }
-.newimg{text-align: center;}
+
+.newimg {
+    text-align: center;
+}
 
 .bsimg img {
     width: 55%;
@@ -212,7 +229,9 @@ body {
     line-height: 30px;
     height: 34vh;
     overflow: auto;
-}/*왜 height조정이 안될까...?*/
+}
+
+/*왜 height조정이 안될까...?*/
 
 
 .bsintro_img {
@@ -250,26 +269,30 @@ body {
 }
 
 /*열린책들 소개페이지*/
-.inbox h2{
+.inbox h2 {
     word-break: keep-all;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
 }
-.inbox h2 b{
+
+.inbox h2 b {
     background-color: #C5161D;
     color: #fff;
     padding: 0 1vw;
     font-size: 25px;
     font-weight: 400;
 }
-.inbox h2 em{
+
+.inbox h2 em {
     font-style: normal;
     color: #C5161D;
     font-weight: 600;
 }
 
-.openintro1, .openintro2, .openintro3{
+.openintro1,
+.openintro2,
+.openintro3 {
     display: flex;
     margin-top: 5vh;
     padding: 0 5vw;
@@ -277,7 +300,8 @@ body {
     line-height: 27px;
     color: #222;
 }
-.openintro4{
+
+.openintro4 {
     margin-top: 5vh;
     padding: 0 5vw;
     padding-bottom: 10vh;
@@ -286,10 +310,11 @@ body {
     color: #222;
 }
 
-.openintro1 p{
+.openintro1 p {
     padding-top: 80px;
 }
-.openintro1 img{
+
+.openintro1 img {
     width: 300px;
     padding-left: 1vw;
 }
@@ -306,17 +331,19 @@ body {
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.5);
 }*/
-.openintro2 img{
+.openintro2 img {
     width: 300px;
     padding-right: 1vw;
     margin-top: 0px;
 }
-.openintro3 img{
+
+.openintro3 img {
     width: 300px;
     padding-left: 1vw;
     margin-top: 0px;
 }
-.openintro4_img{
+
+.openintro4_img {
     background: url(../images/intro_open/4.jpg) no-repeat center/cover;
     width: 100%;
     height: 25vh;
@@ -324,24 +351,255 @@ body {
 }
 
 
-.imghere0, .imghere1, .imghere2{
+.imghere0,
+.imghere1,
+.imghere2 {
     opacity: 0;
     transition: all 1.4s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /*푸터*/
+    .footerlogo {
+        margin-left: 3vw;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+
+    /*푸터*/
+    .footercenter {
+        flex: 5;
+        padding: 3vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 1vw;
+    }
+    .footerlogo img {
+    width: 20vw;
+}
+
+    .footerlogo {
+        margin-left: 0vw;
+    }
+
+    .footerinfo a {
+        font-size: 14px;
+    }
 }
 
 
 
 
+@media only screen and (max-width: 700px) {
+    /*여기부터 모바일버전*/
+
+    .mobiledb {
+        display: block;
+    }
+
+    .mobiledn {
+        display: none;
+    }
+
+    .mobilebr {
+        display: block;
+    }
+
+    .nav_list a {
+        font-size: 3vw;
+    }
 
 
+    .bannerlogo img {
+        width: 50px;
+    }
+
+    .bstit {
+        width: 80%;
+        font-size: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    .bstit small {
+        font-size: 5vw;
+    }
+
+    .bsimg {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bsimg img {
+        width: 35%;
+    }
+
+    .bstxt {
+        float: none;
+        padding-left: 0%;
+    }
+
+    .bstxt_tit a {
+        text-align: center;
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .bstxt_tit {
+        font-size: 20px;
+        margin: 3vw;
+    }
+
+    .txtleft {
+        width: 40%;
+        border-right: 2px solid #C5161D;
+        margin-right: 5px;
+        font-weight: bold;
+        padding-left: 20vw;
+    }
+
+    .bslist {
+        padding-bottom: 10vw;
+    }
+
+    /*책클릭시*/
+    .buylinks {
+        width: 100vw;
+    }
+
+    .buylinks li {
+        margin: 0;
+        flex: 1;
+    }
+
+    .buylinks img {
+        transform: scale(1);
+    }
+
+    .bsintro h2 {
+        font-size: 7vw;
+    }
+
+    .bsintro h3 {
+        font-size: 4vw;
+    }
+
+    .bsintro_img img {
+        width: 100%;
+    }
+
+    .bsintro_x {
+        transform: scale(0.6);
+    }
+
+    /*열린책들 소개페이지*/
+    .bstit.opntit {
+        font-size: 5vw;
+        height: auto;
+    }
+    .bstit.opntit::after {
+     top: auto; 
+}
+
+    .openintro1,
+    .openintro2,
+    .openintro3 {
+        display: block;
+        margin-top: 5vh;
+        padding: 0 5vw;
+        word-break: keep-all;
+        line-height: 27px;
+        color: #222;
+    }
+
+    .m_openintro_img1 {
+        background: url(../images/intro_open/0.jpg) no-repeat center/contain;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 3vh;
+    }
+
+    .m_openintro_img2 {
+        background: url(../images/intro_open/1.jpg) no-repeat center/contain;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 3vh;
+    }
+
+    .m_openintro_img3 {
+        background: url(../images/intro_open/2.jpg) no-repeat center/contain;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 3vh;
+    }
+
+    .openintro1 p {
+        padding-top: 0px;
+    }
+    
+        /*푸터*/
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        display: block;
+    }
+
+    .footerinfo {
+        display: block;
+        padding: 0 5vw;
+    }
+
+    .footerline {
+        display: none;
+    }
+
+    .footerlogo {
+        display: none;
+    }
+
+    .footercenter {
+        padding: 0;
+        padding-left: 0vw;
+    }
+
+    .m_snslinks {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 5vw 0;
+    }
+
+    .m_snslinks li {
+        float: left;
+        width: 33%;
+        text-align: center;
+    }
+
+    .m_snslinks li img {
+        width: 10vw;
+        min-width: 35px;
+    }
+
+    .snslinks {
+        display: none;
+    }
+
+    .footerinfo a {
+        font-size: 4vw;
+        line-height: 3;
+    }
+
+    address {
+        padding: 5vw;
+    }
 
 
+}
 
-
-
-
-
-
-
-
-
+/*700픽셀 미디어쿼리*/

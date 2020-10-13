@@ -1,9 +1,9 @@
 /*서브페이지- 작가 자바스크립트*/
 var auth_name = [
-    "베르나르 베르베르",
-    "로베르토 볼라뇨",
-    "폴 오스터",
-    "조르주 심농"
+    "<span class='m_auth_name'>베르나르 <span class='mobilebr'>베르베르</span></span>",
+    "<span class='m_auth_name'>로베르토 <span class='mobilebr'>볼라뇨</span></span>",
+    "<span class='m_auth_name'>폴 <span class='mobilebr'>오스터</span></span>",
+    "<span class='m_auth_name'>조르주 <span class='mobilebr'>심농</span></span>"
 ]
 
 var auth_txt = ["인간의 눈높이를 벗어난<br> 세상 들여다 보기",
@@ -61,7 +61,7 @@ $(function () {
         var authornum = $(this).index();
         console.log(authornum);
 
-        $(".auth_box").find(".auth_name").empty().text(auth_name[authornum]);
+        $(".auth_box").find(".auth_name").empty().html(auth_name[authornum]);
 
         $(".auth_box").find(".auth_txt").empty().html(auth_txt[authornum]);
 
