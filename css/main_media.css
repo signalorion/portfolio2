@@ -280,9 +280,10 @@
         justify-content: space-between;
         padding-left: 1vw;
     }
+
     .footerlogo img {
-    width: 20vw;
-}
+        width: 20vw;
+    }
 
     .footerlogo {
         margin-left: 0vw;
@@ -408,31 +409,33 @@
         line-height: 10vw;
 
     }
-    .m_member{
+
+    .m_member {
         position: absolute;
         top: 3vw;
         white-space: nowrap;
         position: relative;
     }
-    .m_member::after{
+
+    .m_member::after {
         content: '';
         display: block;
         position: absolute;
         width: 80%;
         height: 2px;
         background-color: #fff;
-        
+
     }
-    
-    
-    .m_member li{
+
+
+    .m_member li {
         margin-bottom: 3vw;
         width: 20vw;
         margin-left: 2vw;
     }
-    
-    
-    .m_member a{
+
+
+    .m_member a {
         color: #f0f0f0;
         font-size: 5vw;
     }
@@ -626,7 +629,7 @@
     }
 
     .newlist li b {
-        font-size: 3vw;
+        font-size: 3.5vw;
         /*        text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;*/
@@ -635,13 +638,14 @@
     }
 
     .newlist li p {
-        font-size: 2.7vw;
+        font-size: 3vw;
     }
 
     /*새로나온책 팝업*/
     .newbookimg {
         width: 100%;
         height: 80%;
+        margin-bottom: 2vw;
     }
 
     .newbook b {
@@ -688,6 +692,16 @@
         display: none;
     }
 
+    .event_box {
+        height: auto;
+        margin: 12vw 0px;
+        padding-bottom: 12vh;
+    }
+
+    .bx-wrapper .bx-controls-direction a {
+        top: 111% !important;
+    }
+
     .cbox1,
     .cbox3 {
         display: none;
@@ -700,9 +714,11 @@
 
     /*편집자 추천도서*/
     .editer_recomm {
+        position: relative;
         height: auto;
         margin: 0vh 0 5vh 0;
         background-color: transparent;
+        /*overflow: auto;*/
     }
 
     .editer_recomm h6 {
@@ -761,18 +777,55 @@
     }
 
     .recomm_hidden {
+        background-color: rgba(0, 0, 0, 0.55);
+        position: absolute;
+        top: 0;
         text-align: center;
     }
 
     .hidden_intro {
         width: 100%;
         text-align: left;
+        color: white;
     }
 
     .recomm_hidden img {
         width: 40vmin;
         float: none;
         margin-right: 0vmin;
+    }
+
+    .hidden_intro p b {
+        color: white;
+    }
+
+    .hidden_intro p {
+        color: white;
+        line-height: 1.7;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+
+    .hidden_intro .hidden_writer {
+        padding: 10px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hidden_intro big {
+        font-size: 23px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    .recomm_hidden .rec_hid_x img {
+        width: 55px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 
     /*다음사이트*/

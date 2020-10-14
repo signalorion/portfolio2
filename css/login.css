@@ -265,9 +265,10 @@
         justify-content: space-between;
         padding-left: 1vw;
     }
+
     .footerlogo img {
-    width: 20vw;
-}
+        width: 20vw;
+    }
 
     .footerlogo {
         margin-left: 0vw;
@@ -463,6 +464,48 @@
         padding-top: 0;
     }
 
+    /*본문*/
+    .login_bg {
+        height: 50vw;
+    }
+
+    .login_wrap {
+        margin: 0vh auto;
+    }
+
+    .tit {
+        padding: 30px;
+        padding-bottom: auto;
+        font-size: 7vw;
+    }
+
+
+    .minput input {
+        width: 60vw;
+        height: 5vh;
+        border: 0px solid #fff;
+        background-color: #e5e5e5;
+        font-size: 15px;
+        color: #222;
+        padding-left: 10px;
+    }
+
+    .addBox {
+        margin-top: 5vw;
+    }
+
+    .addBox > span {
+        display: block;
+        margin-bottom: 5vw;
+    }
+
+    #sbtn {
+        width: 60vw;
+    }
+    #login {
+    height: auto;
+}
+
 
     /*푸터*/
     footer {
@@ -470,6 +513,7 @@
         height: auto;
         background-color: #fff;
         display: block;
+        padding-top: 5vw;
     }
 
     .footerinfo {

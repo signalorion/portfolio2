@@ -76,18 +76,19 @@ $(function () {
 
     /*배너이미지 돌아가기*/
     var banimg = $(".ban_img_box div");
+    var mbanimg = $(".m_ban_img_box div");
     var banbul = $(".ban_bul li")
     var seq = 0;
-     setInterval(function () {
-         seq++;
-         if (seq === 5) seq = 0;
+    setInterval(function () {
+        seq++;
+        if (seq === 5) seq = 0;
 
-         $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[seq] + '</a></h3></li><li><a href="#">' + banwriter[seq] + '<span>' + bantrans[seq] + '</span></a></li>');
-         banimg.eq(seq).addClass("active").siblings().removeClass("active");
+        $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[seq] + '</a></h3></li><li><a href="#">' + banwriter[seq] + '<span>' + bantrans[seq] + '</span></a></li>');
+        banimg.eq(seq).addClass("active").siblings().removeClass("active");
+        mbanimg.eq(seq).addClass("active").siblings().removeClass("active");
 
-         banbul.eq(seq).addClass("on").siblings().removeClass("on");
-     }, 4000);
-    
+        banbul.eq(seq).addClass("on").siblings().removeClass("on");
+    }, 4000);
 
 
     /*블릿 누르면 이동하기*/
@@ -96,6 +97,11 @@ $(function () {
         var thisbul = $(this).index();
         console.log(thisbul);
 
+        $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[thisbul] + '</a></h3></li><li><a href="#">' + banwriter[thisbul] + '<span>' + bantrans[thisbul] + '</span></a></li>');
+        
+        banimg.eq(thisbul).addClass("active").siblings().removeClass("active");
+        mbanimg.eq(thisbul).addClass("active").siblings().removeClass("active");
+        
 
     }); ////////블릿누르면 이동////////////////
 
@@ -108,8 +114,6 @@ $(function () {
     /*새로나온 책*/
     $(".newlist li a").click(function (e) {
         e.preventDefault();
-
-
     }); ////////click////////////////
 
     /*이벤트 배너 좌로 넘어가기*/
@@ -164,6 +168,7 @@ $(function () {
         $(".ebook_popup").show().siblings().hide();
     });
     /*세계문학 클릭시*/
+    var rotImg; //인터발변수
     $(".world").click(function (e) {
         e.preventDefault();
         $(".box_popup").fadeIn();
@@ -173,7 +178,12 @@ $(function () {
         /*이미지 순환*/
         var world_tg = $(".world_popimg div");
         var seq = 0;
-        setInterval(function () {
+        // 인터발 초기화
+        clearInterval(rotImg);
+        // class 초기화
+        world_tg.eq(0).addClass("popon").siblings().removeClass("popon");
+        // 인터발 셋팅!
+        rotImg = setInterval(function () {
             seq++;
             if (seq === 7) seq = 0;
             world_tg.eq(seq).addClass("popon").siblings().removeClass("popon");
@@ -233,23 +243,6 @@ $(function () {
     $(".boxpop_close").click(function () {
         $(".box_popup").fadeOut();
     });
-    /*
-        새로 나온 책 팝업시 화살표액션
-        $(".newpop_right").click(function () {
-            var boxcont = $(".boxpopup_wrap");
-            boxcont.animate({
-                left: "-100%"
-            }, 600, function () {
-                boxcont.append(boxcont.find("div").first()).css({
-                    left: "0"
-                });
-            }); /////////애니메이트///////////
-        }); ////////오른쪽버튼클릭////////////////*/
-
-    //왼쪽버튼은 어케할까??
-
-
-
 
 
 
@@ -261,9 +254,21 @@ $(function () {
         $(this).find("img").attr("src", "images/icons/left_arrow_red.png");
     }); /////////왼쪽버튼 호버시////////////
 
-    /*$(".newpop_left").click(function(){
-        
-    });/////왼쪽버튼 클릭시////////////////*/
+    /////왼쪽버튼 클릭시/////////////////
+    $(".newpop_left").click(function () {
+        // 현재 보이는 것은 순번 읽어오기
+        var tg = $(".newbook:visible");
+        // 다음 순번
+        var idx = tg.index() - 1;
+        console.log(idx);
+
+        if (idx < 0) idx = 3;
+        // 현재보이는 박스 숨기기
+        tg.hide();
+        // 다음 순번 박스 보이기(끝번호는 처음으로!)
+        $(".newbook").eq(idx).show();
+    }); /////////left click //////////////
+
 
 
     $(".newpop_right").hover(function () {
@@ -272,6 +277,23 @@ $(function () {
     }, function () {
         $(this).find("img").attr("src", "images/icons/right_arrow_red.png");
     }); ///////////오른쪽버튼 호버시/////////////
+
+    /////오른쪽버튼 클릭시/////////////////
+    $(".newpop_right").click(function () {
+        // 현재 보이는 것은 순번 읽어오기
+        var tg = $(".newbook:visible");
+        // 다음 순번
+        var idx = tg.index() + 1;
+        console.log(idx);
+
+        if (idx > 3) idx = 0;
+        // 현재보이는 박스 숨기기
+        tg.hide();
+        // 다음 순번 박스 보이기(끝번호는 처음으로!)
+        $(".newbook").eq(idx).show();
+    }); /////////right click //////////////
+
+
 
 
 
@@ -312,6 +334,8 @@ $(function () {
         var recommnum = $(this).parent().index();
         //console.log(recommnum);
 
+        $(".recomm_hidden").show();
+        
         $(".editer_recomm").animate({
             height: "70vh"
         }, 600, function () {
@@ -320,8 +344,12 @@ $(function () {
             }); ////////css////////////
         }); //////늘어나는 애니메이트/////////
 
-        $(".recomm_hidden").empty().append('<img src="images/books/recomm' + (recommnum + 1) + '.jpg"><div class="hidden_intro"><big>' + recomm_big[recommnum] + '</big><b class="hidden_writer">저자 <span>' + recomm_writer[recommnum] + '</span></b><p><b>' + recomm_b[recommnum] + '</b>' + recomm_p[recommnum] + '</p></div>')
-    });
+        $(".recomm_hidden").empty().append('<img src="images/books/recomm' + (recommnum + 1) + '.jpg"><div class="hidden_intro"><big>' + recomm_big[recommnum] + '</big><b class="hidden_writer">저자 <span>' + recomm_writer[recommnum] + '</span></b><p><b>' + recomm_b[recommnum] + '</b>' + recomm_p[recommnum] + '</p></div><div class="rec_hid_x mobiledb"><img src="images/icons/cross_wt.png" alt="닫기"></div>')
+    });/////////////////////////////////////click//////////
+    
+    $(".recomm_hidden .rec_hid_x").click(function(){
+        $(".recomm_hidden").hide();
+    });///아니 왜 안닫히는거니...
 
 
     /*모바일에서*/

@@ -172,6 +172,7 @@
     height: 47px;
     border: 8px solid #C5161D;
     padding-left: 10px;
+    padding-right: 40px;
 }
 
 .main_search img {
@@ -755,9 +756,13 @@ section > a > h6 {
 }
 
 .recomm_hidden {
+    display: none;
     width: 100%;
     padding: 4vmin;
     /*height: 64vh;*/
+}
+.rec_hid_x{
+    display: none;
 }
 
 .recomm_hidden img {

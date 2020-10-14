@@ -9,10 +9,16 @@
     background-color: #f3f8f3;
     overflow: hidden;
 }
-.mobiledb, .m_sidemenu, .mobileham {
+
+.mobiledb,
+.m_sidemenu,
+.mobileham {
     display: none;
 }
-.m_best_img, .m_ban_img_box, .m_member{
+
+.m_best_img,
+.m_ban_img_box,
+.m_member {
     display: none;
 }
 
@@ -102,7 +108,8 @@
     text-align: center;
     font-size: 30px;
 }
-.member_wrap h4{
+
+.member_wrap h4 {
     text-align: right;
     font-weight: 300;
     padding-right: 30px;
@@ -121,10 +128,10 @@
 .member_bg_tit {
     position: absolute;
     bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 20px;
     font-weight: 300;
+    width: 100%;
+    text-align: center;
 }
 
 .member_wrap {
@@ -172,7 +179,7 @@ input {
 
 }
 
-input[type="submit"]{
+input[type="submit"] {
     width: 35%;
     background-color: #C5161D;
     color: #fff;
@@ -228,9 +235,10 @@ input[type="submit"]{
         justify-content: space-between;
         padding-left: 1vw;
     }
+
     .footerlogo img {
-    width: 20vw;
-}
+        width: 20vw;
+    }
 
     .footerlogo {
         margin-left: 0vw;
@@ -426,6 +434,30 @@ input[type="submit"]{
         padding-top: 0;
     }
 
+    /*본문*/
+    .member_bg {
+        height: 50vw;
+    }
+
+    .member_wrap {
+        margin: 0vh auto;
+    }
+
+    .tit {
+        padding: 30px;
+        padding-bottom: auto;
+        font-size: 7vw;
+    }
+
+    .member_bg_tit {
+        background-color: black;
+        color: #c4ddff;
+    }
+
+    input[type="submit"] {
+        width: 55%;
+    }
+
 
     /*푸터*/
     footer {
@@ -433,6 +465,7 @@ input[type="submit"]{
         height: auto;
         background-color: #fff;
         display: block;
+        padding-top: 5vw;
     }
 
     .footerinfo {
