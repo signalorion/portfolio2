@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main_media.css">
+    <link rel="stylesheet" href="css/dragdealer.css">
+    <!--드래그-->
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <!--슬라이더-->
     <title>열린책들</title>
     <script src="script/jquery-3.5.1.min.js"></script>
     <script src="script/jquery-ui.min.js"></script>
+    <script src="script/jquery-touch-punch.min.js"></script>
     <script src="script/js.js"></script>
+    <script src="script/dragdealer.js"></script>
+    <!--드래그-->
     <script src="script/jquery.bxslider.js"></script>
     <!--슬라이더-->
     <script src="script/jQueryRotate.js"></script>
@@ -73,7 +78,7 @@
                         <h4>BESTSELLER <small>베스트셀러</small><span class="mobiledn">더보기 <span class="bsplus">＋</span></span></h4>
                     </a>
                     <div class="best_wrap">
-                       <a href="bestseller.html" class="m_best_img mobiledb"><img src="images/books/kiuk1.jpg" alt="베스트셀러"></a>
+                        <a href="bestseller.html" class="m_best_img mobiledb"><img src="images/books/kiuk1.jpg" alt="베스트셀러"></a>
                         <div class="best_txt">
                             <ul class="best_txt_li">
                                 <li><a href="bestseller.html">
@@ -92,40 +97,46 @@
                     <h5>NEW</h5>
                     <p class="maincont_p">새로나온 책</p>
                     <a href="newbook.html" class="newplus"><span class="mobiledn">더보기 <span class="bsplus">＋</span></span></a>
-                    <ul class="newlist">
-                        <li><a href="#">
-                                <div class="newli_img rbx">
-                                    <img src="images/books/1.jpg" alt="빌 스트리트가 말할 수 있다면" class="ibx">
-                                </div>
-                            </a>
-                            <b>빌 스트리트가 말할 수 있다면</b>
-                            <p>제임스 볼드윈</p>
-                        </li>
-                        <li><a href="#">
-                                <div class="newli_img rbx">
-                                    <img src="images/books/2.jpg" alt="단지 흑인이라서, 다른 이유는 없다" class="ibx">
-                                </div>
-                            </a>
-                            <b>단지 흑인이라서, 다른 이유는 없다</b>
-                            <p>제임스 볼드윈</p>
-                        </li>
-                        <li><a href="#">
-                                <div class="newli_img rbx">
-                                    <img src="images/books/3.jpg" alt="인도로 가는 길" class="ibx">
-                                </div>
-                            </a>
-                            <b>인도로 가는 길</b>
-                            <p>E. M. 포스터</p>
-                        </li>
-                        <li><a href="#">
-                                <div class="newli_img rbx">
-                                    <img src="images/books/4.jpg" alt="아이의 뇌는 스스로 배운다" class="ibx">
-                                </div>
-                            </a>
-                            <b>아이의 뇌는 스스로 배운다</b>
-                            <p>셀린 알바레즈</p>
-                        </li>
-                    </ul>
+                    <div id="move" class="dragdealer">
+                        <ul class="newlist handle">
+                            <li><a href="#">
+                                    <div class="newli_img rbx">
+                                        <img src="images/books/1.jpg" alt="빌 스트리트가 말할 수 있다면" class="ibx">
+                                    </div>
+                                </a>
+                                <b>빌 스트리트가 말할 수 있다면</b>
+                                <p>제임스 볼드윈</p>
+                            </li>
+                            <li><a href="#">
+                                    <div class="newli_img rbx">
+                                        <img src="images/books/2.jpg" alt="단지 흑인이라서, 다른 이유는 없다" class="ibx">
+                                    </div>
+                                </a>
+                                <b>단지 흑인이라서, 다른 이유는 없다</b>
+                                <p>제임스 볼드윈</p>
+                            </li>
+                            <li><a href="#">
+                                    <div class="newli_img rbx">
+                                        <img src="images/books/3.jpg" alt="인도로 가는 길" class="ibx">
+                                    </div>
+                                </a>
+                                <b>인도로 가는 길</b>
+                                <p>E. M. 포스터</p>
+                            </li>
+                            <li><a href="#">
+                                    <div class="newli_img rbx">
+                                        <img src="images/books/4.jpg" alt="아이의 뇌는 스스로 배운다" class="ibx">
+                                    </div>
+                                </a>
+                                <b>아이의 뇌는 스스로 배운다</b>
+                                <p>셀린 알바레즈</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="newmore mobiledb">
+                        <a href="newbook.html">새로나온 책 더보기</a>
+                    </div>
                 </section>
                 <section class="author">
                     <h5>AUTHOR</h5>
@@ -243,6 +254,11 @@
                     </ul>
                 </div>
                 <div class="recomm_hidden clearboth">
+                    <div class="rec_hid_x mobiledb"><img src="images/icons/cross_wt.png" alt="닫기"></div>
+                    <div class="recomm_cont"></div>
+                    <div class="recomm_p_plus mobiledb">
+                        <a href="#">책 소개글 더 보기</a>
+                    </div>
 
                 </div>
             </div>
@@ -250,12 +266,12 @@
         </div>
         <!--********************여기까지 인박스****************************************-->
         <div class="banner">
-           <div class="m_ban_img_box mobiledb">
-                <div class="ban_img1 active"><a href="#"></a></div>
-                <div class="ban_img2"><a href="#"></a></div>
-                <div class="ban_img3"><a href="#"></a></div>
-                <div class="ban_img4"><a href="#"></a></div>
-                <div class="ban_img5"><a href="#"></a></div>
+            <div class="m_ban_img_box mobiledb">
+                <div class="ban_img1 active"><a href="newbook.html"></a></div>
+                <div class="ban_img2"><a href="newbook.html"></a></div>
+                <div class="ban_img3"><a href="newbook.html"></a></div>
+                <div class="ban_img4"><a href="newbook.html"></a></div>
+                <div class="ban_img5"><a href="newbook.html"></a></div>
             </div>
             <div class="ban_txt">
                 <ul class="ban_txt_li">
@@ -274,11 +290,11 @@
                 </ul>
             </div>
             <div class="ban_img_box mobiledn">
-                <div class="ban_img1 active"><a href="#"></a></div>
-                <div class="ban_img2"><a href="#"></a></div>
-                <div class="ban_img3"><a href="#"></a></div>
-                <div class="ban_img4"><a href="#"></a></div>
-                <div class="ban_img5"><a href="#"></a></div>
+                <div class="ban_img1 active"><a href="newbook.html"></a></div>
+                <div class="ban_img2"><a href="newbook.html"></a></div>
+                <div class="ban_img3"><a href="newbook.html"></a></div>
+                <div class="ban_img4"><a href="newbook.html"></a></div>
+                <div class="ban_img5"><a href="newbook.html"></a></div>
             </div>
         </div>
 

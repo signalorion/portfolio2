@@ -211,6 +211,20 @@ input[type="submit"] {
         padding-top: 0px;
     }
 
+    /*본문*/
+    .tit {
+        padding-bottom: auto;
+        font-size: 5vw;
+    }
+
+    .member_bg {
+        height: 25vh;
+    }
+
+    .member_wrap {
+        margin: 5vh auto;
+    }
+
     /*푸터*/
     .footerlogo {
         margin-left: 3vw;
@@ -443,9 +457,13 @@ input[type="submit"] {
         margin: 0vh auto;
     }
 
+    .formframe li {
+        margin: 8vw 0;
+    }
+
     .tit {
         padding: 30px;
-        padding-bottom: auto;
+        padding-bottom: 0;
         font-size: 7vw;
     }
 
@@ -517,4 +535,26 @@ input[type="submit"] {
         padding: 5vw;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .member_bg_tit {
+        font-size: 4vw;
+    }
+
+    .member_wrap h4 {
+        text-align: center;
+        padding-right: 0px;
+        padding-bottom: 2vh;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    input {
+        font-size: 11px;
+    }
+
+    .formframe {
+        width: 90%;
+    }
 }

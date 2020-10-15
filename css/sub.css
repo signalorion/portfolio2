@@ -229,9 +229,10 @@ body {
     line-height: 30px;
     height: 34vh;
     overflow: auto;
+    padding: 0 3vw;
 }
 
-/*왜 height조정이 안될까...?*/
+/*왜 height조정이 안될까...? overflow auto를 안해서*/
 
 
 .bsintro_img {
@@ -379,9 +380,10 @@ body {
         justify-content: space-between;
         padding-left: 1vw;
     }
+
     .footerlogo img {
-    width: 20vw;
-}
+        width: 20vw;
+    }
 
     .footerlogo {
         margin-left: 0vw;
@@ -474,7 +476,7 @@ body {
 
     .buylinks li {
         margin: 0;
-        flex: 1;
+        width: 25%;
     }
 
     .buylinks img {
@@ -489,9 +491,18 @@ body {
         font-size: 4vw;
     }
 
+    .bsintro_img.bsver {
+        width: 55%;
+    }
+
+    .bsintro_img.bsver img {
+        width: 50%;
+    }
+
     .bsintro_img img {
         width: 100%;
     }
+
 
     .bsintro_x {
         transform: scale(0.6);
@@ -502,9 +513,10 @@ body {
         font-size: 5vw;
         height: auto;
     }
+
     .bstit.opntit::after {
-     top: auto; 
-}
+        top: auto;
+    }
 
     .openintro1,
     .openintro2,
@@ -541,8 +553,8 @@ body {
     .openintro1 p {
         padding-top: 0px;
     }
-    
-        /*푸터*/
+
+    /*푸터*/
     footer {
         width: 100%;
         height: auto;

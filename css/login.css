@@ -241,6 +241,28 @@
         padding-top: 0px;
     }
 
+    /*본문*/
+    #sbtn {
+        width: 45vw;
+    }
+
+    .minput input {
+        width: 45vw;
+    }
+
+    .tit {
+        padding-bottom: auto;
+        font-size: 5vw;
+    }
+
+    .login_bg {
+        height: 25vh;
+    }
+
+    .login_wrap {
+        margin: 5vh auto;
+    }
+
     /*푸터*/
     .footerlogo {
         margin-left: 3vw;
@@ -502,9 +524,10 @@
     #sbtn {
         width: 60vw;
     }
+
     #login {
-    height: auto;
-}
+        height: auto;
+    }
 
 
     /*푸터*/
@@ -565,4 +588,26 @@
         padding: 5vw;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .login_bg_tit {
+        font-size: 4vw;
+    }
+
+    .login_come {
+        font-size: 4vw;
+    }
+
+    .addBox > a {
+        font-size: 4vw;
+    }
+
+    #sbtn {
+        width: 80vw;
+    }
+
+    .minput input {
+        width: 80vw;
+    }
 }

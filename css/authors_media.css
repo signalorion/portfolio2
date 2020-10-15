@@ -151,7 +151,7 @@
     .bookli_box h5,
     .bookli_box p {
         display: inline-block;
-        width: 70%;
+        width: 71%;
         padding-left: 20px;
         padding-top: 5vw;
     }
@@ -226,3 +226,23 @@
 }
 
 /*700*/
+
+@media only screen and (max-width: 375px) {
+    .bstit p {
+        font-size: 13px;
+    }
+
+    .author_booklist h3::after {
+        bottom: 30%;
+
+    }
+    .auth_intro {
+    font-size: 14px;
+}
+
+    .next_author {
+        width: 50vw;
+    }
+}
+
+/*375*/

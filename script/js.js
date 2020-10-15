@@ -63,7 +63,11 @@ var recomm_p = [
 var mobile_w = window.outerWidth;
 console.log(mobile_w);
 
+function notyet() {
+    alert("열린책들 홈페이지로 이동합니다.");
+}
 $(function () {
+
 
     $(".intro_index li").mouseenter(function () {
         $(this).addClass("on").siblings().removeClass("on");
@@ -79,7 +83,8 @@ $(function () {
     var mbanimg = $(".m_ban_img_box div");
     var banbul = $(".ban_bul li")
     var seq = 0;
-    setInterval(function () {
+    var banrot; //인터발함수
+    banrot = setInterval(function () {
         seq++;
         if (seq === 5) seq = 0;
 
@@ -97,11 +102,28 @@ $(function () {
         var thisbul = $(this).index();
         console.log(thisbul);
 
+        //클리어!
+        clearInterval(banrot);
+
+        //인터발셋팅
+        banrot = setInterval(function () {
+            thisbul++;
+            if (thisbul === 5) thisbul = 0;
+
+            $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[thisbul] + '</a></h3></li><li><a href="#">' + banwriter[thisbul] + '<span>' + bantrans[thisbul] + '</span></a></li>');
+
+            banimg.eq(thisbul).addClass("active").siblings().removeClass("active");
+            mbanimg.eq(thisbul).addClass("active").siblings().removeClass("active");
+
+            banbul.eq(thisbul).addClass("on").siblings().removeClass("on");
+
+        }, 4000); ///////블릿클릭시 인터발////////////////////
+
         $(".ban_txt_li").empty().append('<li><h3><a href="newbook.html">' + bantit[thisbul] + '</a></h3></li><li><a href="#">' + banwriter[thisbul] + '<span>' + bantrans[thisbul] + '</span></a></li>');
-        
+
         banimg.eq(thisbul).addClass("active").siblings().removeClass("active");
         mbanimg.eq(thisbul).addClass("active").siblings().removeClass("active");
-        
+
 
     }); ////////블릿누르면 이동////////////////
 
@@ -246,6 +268,9 @@ $(function () {
 
 
 
+
+
+
     /*새로나온 책 양옆버튼*/
     $(".newpop_left").hover(function () {
         $(this).find("img").attr("src", "images/icons/bk_left_arrow.png");
@@ -268,8 +293,6 @@ $(function () {
         // 다음 순번 박스 보이기(끝번호는 처음으로!)
         $(".newbook").eq(idx).show();
     }); /////////left click //////////////
-
-
 
     $(".newpop_right").hover(function () {
         $(this).find("img").attr("src", "images/icons/bk_right_arrow.png");
@@ -335,25 +358,26 @@ $(function () {
         //console.log(recommnum);
 
         $(".recomm_hidden").show();
-        
+
         $(".editer_recomm").animate({
-            height: "70vh"
+            height: "auto"
         }, 600, function () {
             $(".editer_recomm").css({
                 height: "auto"
             }); ////////css////////////
         }); //////늘어나는 애니메이트/////////
 
-        $(".recomm_hidden").empty().append('<img src="images/books/recomm' + (recommnum + 1) + '.jpg"><div class="hidden_intro"><big>' + recomm_big[recommnum] + '</big><b class="hidden_writer">저자 <span>' + recomm_writer[recommnum] + '</span></b><p><b>' + recomm_b[recommnum] + '</b>' + recomm_p[recommnum] + '</p></div><div class="rec_hid_x mobiledb"><img src="images/icons/cross_wt.png" alt="닫기"></div>')
-    });/////////////////////////////////////click//////////
-    
-    $(".recomm_hidden .rec_hid_x").click(function(){
-        $(".recomm_hidden").hide();
-    });///아니 왜 안닫히는거니...
+        $(".recomm_cont").empty().append('<img src="images/books/recomm' + (recommnum + 1) + '.jpg"><div class="hidden_intro"><big>' + recomm_big[recommnum] + '</big><b class="hidden_writer">저자 <span>' + recomm_writer[recommnum] + '</span></b><p><b>' + recomm_b[recommnum] + '</b>' + recomm_p[recommnum] + '</p></div>')
+
+    }); /////////////////////////////////////click//////////
+
+    $(".rec_hid_x").click(function () {
+        $(this).parent().hide();
+    });
 
 
     /*모바일에서*/
-
+    /*모바일 햄버거 늘어나기*/
     $(".mobileham a").click(function () {
         $(".m_sidemenu").animate({
             width: "100vw"
@@ -366,9 +390,30 @@ $(function () {
         }, 400);
     });
 
-    /*if (mobile_w > 700) {
-        $(".banner").find("div").eq(0).hide();
-    }*/
+    /*새로나온책 드래그*/
+    new Dragdealer('move');
+
+    if (700 < mobile_w) {
+        /*mobile_w < 700 이거는 안되고 저건 됨..ㅋ*/
+        $("#move").removeClass("dragdealer");
+    }
+
+    $(".recomm_p_plus a").click(function (e) {
+        e.preventDefault();
+        
+        $(".hidden_intro p").css({
+            display:"block"
+        });
+    });
+
+
+
+
+
+
+
+
+
 
 }); /////////////제이쿼리블록//////////////
 /////////////////////////////////////////////////

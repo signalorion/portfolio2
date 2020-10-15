@@ -383,6 +383,8 @@
         color: #fff;
         font-size: 10vw;
         width: 100vw;
+        height: 100%;
+        display: block;
     }
 
     .m_side_list li:hover {
@@ -557,10 +559,12 @@
         left: 50%;
         transform: translateX(-50%);
         top: 5vw;
-    }
-
-    .m_ban_img_box {
         position: relative;
+    }
+    .m_ban_img_box a{
+        width: 100%;
+        height: 100%;
+        display: block;
     }
 
     .m_ban_img_box div {
@@ -608,6 +612,13 @@
         position: static;
     }
 
+    /*움직일 갤러리*/
+    .dragdealer {
+        position: relative;
+        height: 65vw !important;
+        background: transparent !important;
+    }
+
 
     .newlist {
         padding: 0;
@@ -639,6 +650,22 @@
 
     .newlist li p {
         font-size: 3vw;
+    }
+
+    .newmore {
+        background-color: white;
+        border: 1px solid #C2C2C2;
+        width: 222px;
+        margin: 5vw auto;
+        line-height: 3;
+        border-radius: 25px;
+        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39);
+    }
+
+    .newmore a {
+        color: #C5161D;
+        display: block;
+        width: 100%;
     }
 
     /*새로나온책 팝업*/
@@ -778,9 +805,28 @@
 
     .recomm_hidden {
         background-color: rgba(0, 0, 0, 0.55);
-        position: absolute;
+        position: fixed;
         top: 0;
+        z-index: 77;
         text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .recomm_p_plus {
+        background-color: white;
+        border: 1px solid #C2C2C2;
+        width: 222px;
+        margin: 5vw auto;
+        line-height: 3;
+        border-radius: 25px;
+        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39);
+    }
+
+    .recomm_p_plus a {
+        color: #222;
+        width: 100%;
+        display: block;
     }
 
     .hidden_intro {

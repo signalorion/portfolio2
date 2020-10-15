@@ -8,7 +8,7 @@
 .mobiledb, .m_sidemenu, .mobileham {
     display: none;
 }
-.m_best_img, .m_ban_img_box, .m_member{
+.m_best_img, .m_ban_img_box, .m_member, .newmore, .recomm_p_plus{
     display: none;
 }
 
