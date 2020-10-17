@@ -335,13 +335,13 @@ body {
 .openintro2 img {
     width: 300px;
     padding-right: 1vw;
-    margin-top: 0px;
+    margin-top: -100px;
 }
 
 .openintro3 img {
     width: 300px;
     padding-left: 1vw;
-    margin-top: 0px;
+    margin-top: -100px;
 }
 
 .openintro4_img {
@@ -351,13 +351,6 @@ body {
     margin-bottom: 3vh;
 }
 
-
-.imghere0,
-.imghere1,
-.imghere2 {
-    opacity: 0;
-    transition: all 1.4s ease-out;
-}
 
 @media only screen and (max-width: 1024px) {
 
@@ -416,6 +409,10 @@ body {
         font-size: 3vw;
     }
 
+    .inbox {
+        padding: 0 0px;
+    }
+
 
     .bannerlogo img {
         width: 50px;
@@ -426,6 +423,9 @@ body {
         font-size: 6vw;
         margin-bottom: 5vw;
     }
+    .bstit p {
+    font-size: 4vw;
+}
 
     .bstit small {
         font-size: 5vw;

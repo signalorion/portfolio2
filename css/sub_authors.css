@@ -81,23 +81,27 @@ nav {
     height: 50px;
     background-color: #2E2E2E;
 }
-.nav_list{
+
+.nav_list {
     width: 1200px;
     margin: 0 auto;
     display: flex;
     max-width: 100%;
 }
-.nav_list a{
+
+.nav_list a {
     color: #eaeaea;
     line-height: 50px;
     display: block;
     width: 100%;
 }
-.nav_list li{
+
+.nav_list li {
     width: 33%;
     text-align: center;
 }
-.nav_on{
+
+.nav_on {
     background-color: #C5161D;
     font-weight: 600;
     font-size: 18px;
@@ -236,7 +240,8 @@ nav {
 .bookli_box p {
     font-size: 15px;
 }
-.bookliimg{
+
+.bookliimg {
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
@@ -266,3 +271,5 @@ nav {
     vertical-align: -2px;
     margin-left: 20px;
 }
+
+

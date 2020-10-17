@@ -11,6 +11,9 @@
 .m_best_img, .m_ban_img_box, .m_member, .newmore, .recomm_p_plus{
     display: none;
 }
+.mobiledb{
+    display: none;
+}
 
 
 
@@ -984,7 +987,8 @@ section > a > h6 {
     transform: translate(-50%, -50%);
     width: 60vw;
     height: 70vh;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     /*border: 8px solid #C5161D;*/
 }
 
@@ -1060,8 +1064,16 @@ section > a > h6 {
     top: 5%;
     right: 21%;
 }
+.m_boxpop_close{
+    position: absolute;
+    top: 5%;
+    right: 21%;
+}
 
 .boxpop_close img {
+    width: 55px;
+}
+.m_boxpop_close img {
     width: 55px;
 }
 

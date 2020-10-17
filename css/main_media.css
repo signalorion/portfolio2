@@ -561,7 +561,8 @@
         top: 5vw;
         position: relative;
     }
-    .m_ban_img_box a{
+
+    .m_ban_img_box a {
         width: 100%;
         height: 100%;
         display: block;
@@ -811,6 +812,7 @@
         text-align: center;
         width: 100vw;
         height: 100vh;
+        overflow: scroll;
     }
 
     .recomm_p_plus {
@@ -934,6 +936,49 @@
 
     address {
         padding: 5vw;
+    }
+
+    /*사이드메뉴팝업*/
+    .boxpop_right {
+    right: 2vw;
+}
+    .box_fix {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .m_boxpop_close {
+        top: 10px;
+        right: 5vw;
+        z-index: 7;
+    }
+    .m_boxpop_close img{
+        width: 30px;
+    }
+
+    /*전자책*/
+    .ebook_popimg {
+        display: none;
+    }
+    .ebook_popintro b {
+     width: 100%; 
+}
+    .thisboxpopup.ebook_popup {
+     height: 100vh; 
+}
+
+    /*세계문학*/
+    .world_big {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .worldtit {
+        width: 100%;
+    }
+
+    .world_popimg {
+        display: none;
     }
 
 }

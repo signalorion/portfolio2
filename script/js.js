@@ -376,10 +376,10 @@ $(function () {
     });
 
 
-    /*모바일에서*/
+    /*모바일에서**************************************/
     /*모바일 햄버거 늘어나기*/
     $(".mobileham a").click(function () {
-        $(".m_sidemenu").animate({
+        $(".m_sidemenu").show().animate({
             width: "100vw"
         }, 400);
     });
@@ -398,14 +398,41 @@ $(function () {
         $("#move").removeClass("dragdealer");
     }
 
+    /*편집자추천도서*/
+    /*더보기가 나와야하기때문에...*/
+    
     $(".recomm_p_plus a").click(function (e) {
         e.preventDefault();
         
         $(".hidden_intro p").css({
             display:"block"
         });
+
+        $(this).parent().hide();
+        
+    });/////////////더보기버튼 누르면////////
+    $(".recomm_hidden .rec_hid_x img").click(function(){
+        $(".recomm_p_plus a").parent().show();
     });
 
+    
+    /*메뉴클릭시 팝업뜨기*/
+    $(".m_side_list li").eq(1).click(function(){
+        $(".m_sidemenu").hide();
+        $(".collect a").trigger("click");
+    });
+    $(".m_side_list li").eq(2).click(function(){
+        $(".m_sidemenu").hide();
+        $(".ebook a").trigger("click");
+    });
+    $(".m_side_list li").eq(3).click(function(){
+        $(".m_sidemenu").hide();
+        $(".world a").trigger("click");
+    });
+    
+    $(".m_boxpop_close").click(function () {
+        $(".box_popup").fadeOut();
+    });
 
 
 
