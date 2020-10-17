@@ -592,7 +592,9 @@
 
 @media only screen and (max-width: 500px) {
     .login_bg_tit {
+        background-color: white;
         font-size: 4vw;
+        color: #222;
     }
 
     .login_come {
