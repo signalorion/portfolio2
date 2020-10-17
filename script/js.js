@@ -102,7 +102,7 @@ $(function () {
         var thisbul = $(this).index();
         console.log(thisbul);
 
-        //클리어!
+        //클리어~~
         clearInterval(banrot);
 
         //인터발셋팅
