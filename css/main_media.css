@@ -1,6 +1,11 @@
 @media only screen and (max-width: 1200px) {
     /*C5161D*/
 
+    /*인트로화면*/
+    #intro h1 a {
+        font-size: 5vw;
+    }
+
     /*배너 1200미디어쿼리*/
     .ban_img_box {
         flex: 2;
@@ -92,6 +97,15 @@
 /*메인 1200픽셀 미디어쿼리*/
 
 @media only screen and (max-width: 1024px) {
+
+    /*인트로*/
+    .openhover {
+        background: url(../images/bg/d_openbooksbg.jpg)no-repeat left/cover;
+    }
+
+    .intro_index {
+        width: 100%;
+    }
 
     /*로고조금 조정*/
     .toplogo img {
@@ -298,6 +312,10 @@
 /*메인 850픽셀 미디어쿼리*/
 
 @media only screen and (max-width: 700px) {
+    .intro_index {
+        font-size: 8vw;
+    }
+
     /*여기부터 모바일버전*/
 
     .mobiledb {
@@ -940,8 +958,9 @@
 
     /*사이드메뉴팝업*/
     .boxpop_right {
-    right: 2vw;
-}
+        right: 2vw;
+    }
+
     .box_fix {
         width: 100vw;
         height: 100vh;
@@ -952,7 +971,8 @@
         right: 5vw;
         z-index: 7;
     }
-    .m_boxpop_close img{
+
+    .m_boxpop_close img {
         width: 30px;
     }
 
@@ -960,12 +980,14 @@
     .ebook_popimg {
         display: none;
     }
+
     .ebook_popintro b {
-     width: 100%; 
-}
+        width: 100%;
+    }
+
     .thisboxpopup.ebook_popup {
-     height: 100vh; 
-}
+        height: 100vh;
+    }
 
     /*세계문학*/
     .world_big {

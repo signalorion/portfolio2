@@ -34,7 +34,7 @@
     font-size: 22px;
 }
 
-.bstit p {
+.bstit span {
     font-size: 16px;
     font-weight: 400;
     color: #717171;
@@ -423,7 +423,7 @@ body {
         font-size: 6vw;
         margin-bottom: 5vw;
     }
-    .bstit p {
+    .bstit span {
     font-size: 4vw;
 }
 
